@@ -11,15 +11,20 @@ appearance:
   font: minimal
   font_size: L
 
+publications:
+  date_format: "January 2006"
+  citation_style: "apa"
+
+
 # SEO
 
 marketing:
   seo:
     site_type: Person
-    local_business_type: ''
+    local_business_type: 'University'
     org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
-    twitter: 'wowchemy'
+    description: 'Personal webpage for Christos Kozyrakis.'
+    twitter: 'kozyraki'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -32,7 +37,7 @@ marketing:
 header:
   navbar:
     enable: true
-    align: l
+    align: r
     show_logo: true
     show_language: false
     show_day_night: true
@@ -43,9 +48,9 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {2022} Christos Kozyrakis'
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
