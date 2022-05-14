@@ -40,7 +40,7 @@ content:
   coordinates:
     latitude: '37.43000'
     longitude: ' -122.1733'
-  directions: '[Google maps](https://goo.gl/maps/MG1TZ5ovdQrQwhhw7), [nearest parking](https://goo.gl/maps/H1Ki7Fnmc9YVfBB88) '
+  directions: '[Google maps](https://goo.gl/maps/MG1TZ5ovdQrQwhhw7), [parking](https://goo.gl/maps/H1Ki7Fnmc9YVfBB88) '
   #appointment_url: 'https://calendly.com'
   contact_links:
 #    - icon: twitter

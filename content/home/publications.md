@@ -7,7 +7,7 @@ widget: pages
 headless: true
 
 # Order that this section appears on the page.
-weight: 90
+weight: 20
 
 title: Recent Publications
 subtitle: ''
@@ -30,14 +30,14 @@ content:
   offset: 0
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
+  archive:
+    enable: true
+    text: "Full publications list"
 
 design:
   # Choose a view for the listings: (citation 2)
-  view: list 
+  view: community/mycompact
+  #view: 3
   columns: '2'
 
 ---
-
-{{% callout note %}}
-Quickly discover relevant content by [filtering publications](./publication/).
-{{% /callout %}}

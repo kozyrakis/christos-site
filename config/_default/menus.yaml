@@ -13,19 +13,19 @@ main:
   - name: MAST
     url: 'https://mast.stanford.edu'
     weight: 30
-  - name: Research group
+  - name: Publications
+    url: '#featured'
+    weight: 40
+  - name: Group
     url: '#students'
-    weight: 40 # - name: Projects
+    weight: 50 # - name: Projects
  #   url: '#projects'
  #   weight: 30
   #- name: Talks
   #  url: '#talks'
   #  weight: 40
-  - name: Publications
-    url: '#featured'
-    weight: 50
   - name: Courses
-    url: '#featured'
+    url: '#teaching'
     weight: 60
 
   - name: Contact

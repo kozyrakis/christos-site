@@ -84,4 +84,4 @@ Christos Kozyrakis is a Professor of [Electrical Engineering](https://ee.stanfor
 
 Christos holds a BS degree from the [University of Crete](https://www.csd.uoc.gr/) and a PhD degree from the [University of California at Berkeley](https://cs.berkeley.edu/). He is a fellow of the ACM and the IEEE. He has received the [ACM SIGARCH Maurice Wilkes Award](https://www.sigarch.org/benefit/awards/acm-sigarch-maurice-wilkes-award/), the [ISCA Influential Paper Award](https://www.sigarch.org/benefit/awards/acm-sigarchieee-cs-tcca-influential-isca-paper-award/), the NSF Career Award, the Okawa Foundation Research Grant, and faculty awards by IBM, Microsoft, and Google. 
 
-Christos leads the [MAST](https://mast.stanford.edu) research group. Code for most MAST projects is available on [Github {{< icon name="github" pack="fab" >}}](https://www.github.com/stanford-mast). 
+Christos leads the [MAST](https://mast.stanford.edu) research group. He is also the faculty director of the [Stanford Platform Lab](https://platformlab.stanford.edu).
