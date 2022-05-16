@@ -1,0 +1,15 @@
+@inproceedings{2007-opentm-pact,
+ abstract = {Transactional Memory (TM) simplifies parallel programming by supporting atomic and isolated execution of user-identified tasks. To date, TM programming has required the use of libraries that make it difficult to achieve scalable performance with code that is easy to develop and maintain. For TM programming to become practical, it is important to integrate TM into familiar, high-level environments for parallel programming. This paper presents OpenTM, an application programming interface (API) for parallel programming with transactions. OpenTM extends OpenMP, a widely used API for shared-memory parallel programming, with a set of compiler directives to express non-blocking synchronization and speculative parallelization based on memory transactions. We also present a portable OpenTM implementation that produces code for hardware, software, and hybrid TM systems. The implementation builds upon the OpenMP support in the GCC compiler and includes a runtime for the C programming language. We evaluate the performance and programmability features of OpenTM. We show that it delivers the performance of fine-grain locks at the programming simplicity of coarsegrain locks. Compared to transactional programming with lower-level interfaces, it removes the burden of manual annotations for accesses to shared variables and enables easy changes of the scheduling and contention management policies. Overall, OpenTM provides a practical and efficient TM programming environment within the familiar scope of OpenMP.},
+ address = {USA},
+ author = {Baek, Woongki and Minh, Chi Cao and Trautmann, Martin and Kozyrakis, Christos and Olukotun, Kunle},
+ booktitle = {Proceedings of the 16th International Conference on Parallel Architecture and Compilation Techniques (PACT)},
+ isbn = {0769529445},
+ month = {September},
+ numpages = {12},
+ pages = {376–387},
+ publisher = {IEEE Computer Society},
+ series = {PACT '07},
+ title = {The OpenTM Transactional Application Programming Interface},
+ year = {2007}
+}
+

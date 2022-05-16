@@ -1,0 +1,17 @@
+@inproceedings{2020-power-socc,
+ abstract = {Data center energy consumption has become an increasingly significant contributor both to greenhouse emissions and costs. To increase utilization of individual hosts and improve efficiency, most modern data centers co-locate workloads belonging to different application classes, some being latency-sensitive (LS) and others best-effort (BE) which are more tolerant to performance variation. It is therefore necessary to design mechanisms that reduce power consumption even in the resulting high-utilization environment, while preserving LS task performance. Moreover, the abundance of different workloads and the security implications of public cloud make mechanisms that rely on extensive knowledge of workload characteristics or on application-exported metrics challenging to deploy.We present PACT, Per Application Class Turbo Controller, a system that leverages two novel mechanisms to reduce power consumption even in highly-utilized data centers. By treating applications like opaque boxes that do not need to provide application-specific performance signals, the first mechanism, Turbo Control, reduces power consumption by decreasing the operating frequency and throttling only BE tasks, without affecting performance-sensitive LS tasks. We identify the shortcomings of Turbo Control and increase its effectiveness by introducing CPUJailing, a mechanism that allocates different sets of cores to LS and BE applications. We deploy PACT (Turbo Control + CPUJailing) in production at Google's data centers and demonstrate that it provides workload-agnostic power savings of 9% on average together with a 4% performance improvement for LS tasks across thousands of workloads and nodes.},
+ address = {New York, NY, USA},
+ author = {Kaffes, Kostis and Sbirlea, Dragos and Lin, Yiyan and Lo, David and Kozyrakis, Christos},
+ booktitle = {Proceedings of the 11th ACM Symposium on Cloud Computing (SoCC)},
+ doi = {10.1145/3419111.3421274},
+ isbn = {9781450381376},
+ location = {Virtual Event, USA},
+ month = {August},
+ numpages = {16},
+ pages = {134–149},
+ publisher = {Association for Computing Machinery},
+ series = {SoCC '20},
+ title = {Leveraging Application Classes to Save Power in Highly-Utilized Data Centers},
+ year = {2020}
+}
+

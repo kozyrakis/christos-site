@@ -1,0 +1,14 @@
+@inproceedings{2020-racksched-osdi,
+ abstract = {Low-latency online services have strict Service Level Objectives (SLOs) that require datacenter systems to support high throughput at microsecond-scale tail latency. Dataplane operating systems have been designed to scale up multicore servers with minimal overhead for such SLOs. However, as application demands continue to increase, scaling up is not enough, and serving larger demands requires these systems to scale out to multiple servers in a rack.We present RackSched, the first rack-level microsecond-scale scheduler that provides the abstraction of a rack-scale computer (i.e., a huge server with hundreds to thousands of cores) to an external service with network-system co-design. The core of RackSched is a two-layer scheduling framework that integrates inter-server scheduling in the top-of-rack (ToR) switch with intra-server scheduling in each server. We use a combination of analytical results and simulations to show that it provides near-optimal performance as centralized scheduling policies, and is robust for both low-dispersion and high-dispersion workloads. We design a custom switch data plane for the inter-server scheduler, which realizes power-of-k-choices, ensures request affinity, and tracks server loads accurately and efficiently. We implement a RackSched prototype on a cluster of commodity servers connected by a Barefoot Tofino switch. End-to-end experiments on a twelve-server testbed show that RackSched improves the throughput by up to 1.44×, and scales out the throughput near linearly, while maintaining the same tail latency as one server until the system is saturated.},
+ address = {USA},
+ articleno = {69},
+ author = {Zhu, Hang and Kaffes, Kostis and Chen, Zixu and Liu, Zhenming and Kozyrakis, Christos and Stoica, Ion and Jin, Xin},
+ booktitle = {Proceedings of the 14th USENIX Conference on Operating Systems Design and Implementation (OSDI)},
+ isbn = {978-1-939133-19-9},
+ month = {October},
+ numpages = {16},
+ publisher = {USENIX Association},
+ title = {RackSched: A Microsecond-Scale Scheduler for Rack-Scale Computers},
+ year = {2020}
+}
+

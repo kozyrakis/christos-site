@@ -1,0 +1,18 @@
+@inproceedings{2017-tetris-asplos,
+ abstract = {The high accuracy of deep neural networks (NNs) has led to the development of NN accelerators that improve performance by two orders of magnitude. However, scaling these accelerators for higher performance with increasingly larger NNs exacerbates the cost and energy overheads of their memory systems, including the on-chip SRAM buffers and the off-chip DRAM channels.This paper presents the hardware architecture and software scheduling and partitioning techniques for TETRIS, a scalable NN accelerator using 3D memory. First, we show that the high throughput and low energy characteristics of 3D memory allow us to rebalance the NN accelerator design, using more area for processing elements and less area for SRAM buffers. Second, we move portions of the NN computations close to the DRAM banks to decrease bandwidth pressure and increase performance and energy efficiency. Third, we show that despite the use of small SRAM buffers, the presence of 3D memory simplifies dataflow scheduling for NN computations. We present an analytical scheduling scheme that matches the efficiency of schedules derived through exhaustive search. Finally, we develop a hybrid partitioning scheme that parallelizes the NN computations over multiple accelerators. Overall, we show that TETRIS improves mthe performance by 4.1x and reduces the energy by 1.5x over NN accelerators with conventional, low-power DRAM memory systems.},
+ address = {New York, NY, USA},
+ author = {Gao, Mingyu and Pu, Jing and Yang, Xuan and Horowitz, Mark and Kozyrakis, Christos},
+ booktitle = {Proceedings of the 22nd International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)},
+ doi = {10.1145/3037697.3037702},
+ isbn = {9781450344654},
+ keywords = {neural networks, partitioning, 3d memory, dataflow scheduling, acceleration},
+ location = {Xi'an, China},
+ month = {April},
+ numpages = {14},
+ pages = {751–764},
+ publisher = {Association for Computing Machinery},
+ series = {ASPLOS '17},
+ title = {TETRIS: Scalable and Efficient Neural Network Acceleration with 3D Memory},
+ year = {2017}
+}
+

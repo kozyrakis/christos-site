@@ -1,0 +1,16 @@
+@inproceedings{2018-pocket-osdi,
+ abstract = {Serverless computing is becoming increasingly popular, enabling users to quickly launch thousands of short-lived tasks in the cloud with high elasticity and fine-grain billing. These properties make serverless computing appealing for interactive data analytics. However exchanging intermediate data between execution stages in an analytics job is a key challenge as direct communication between serverless tasks is difficult. The natural approach is to store such ephemeral data in a remote data store. However, existing storage systems are not designed to meet the demands of serverless applications in terms of elasticity, performance, and cost. We present Pocket, an elastic, distributed data store that automatically scales to provide applications with desired performance at low cost. Pocket dynamically rightsizes resources across multiple dimensions (CPU cores, network bandwidth, storage capacity) and leverages multiple storage technologies to minimize cost while ensuring applications are not bottlenecked on I/O. We show that Pocket achieves similar performance to ElastiCache Redis for serverless analytics applications while reducing cost by almost 60%.},
+ address = {USA},
+ author = {Klimovic, Ana and Wang, Yawen and Stuedi, Patrick and Trivedi, Animesh and Pfefferle, Jonas and Kozyrakis, Christos},
+ booktitle = {Proceedings of the 13th USENIX Conference on Operating Systems Design and Implementation (OSDI)},
+ isbn = {9781931971478},
+ location = {Carlsbad, CA, USA},
+ month = {October},
+ numpages = {18},
+ pages = {427–444},
+ publisher = {USENIX Association},
+ series = {OSDI'18},
+ title = {Pocket: Elastic Ephemeral Storage for Serverless Analytics},
+ year = {2018}
+}
+

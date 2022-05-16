@@ -1,0 +1,17 @@
+@inproceedings{2021-smartharvest-eurosys,
+ abstract = {We can increase the efficiency of public cloud datacenters by harvesting allocated but temporarily idling CPU cores from customer virtual machines (VMs) to run batch or analytics workloads. Even small efficiency gains translate into substantial savings, since provisioning and operating a datacenter costs hundreds of millions of dollars per year. The main challenge is to harvest idle cores with little or no impact on customer VMs, which could be running latency-sensitive services and are essentially black-boxes to the cloud provider.We introduce ElasticVM, a new VM type that can run batch workloads cheaply using mainly harvested cores. We also propose SmartHarvest, a system that dynamically manages the number of cores available to ElasticVMs in each fine-grained time window. SmartHarvest uses online learning to predict the core demand of primary, customer VMs and compute the number of cores that can be safely harvested. Our results show that SmartHarvest can harvest a significant amount of CPU resources without increasing the 99th-percentile tail latency of latency-critical primary workloads by more than 10%. Unlike static harvesting techniques that rely on offline profiling, SmartHarvest is robust to different primary workloads, batch workloads, and load changes. Finally, we show that the online learning in SmartHarvest is complementary to systems optimizations for VM management.},
+ address = {New York, NY, USA},
+ author = {Wang, Yawen and Arya, Kapil and Kogias, Marios and Vanga, Manohar and Bhandari, Aditya and Yadwadkar, Neeraja J. and Sen, Siddhartha and Elnikety, Sameh and Kozyrakis, Christos and Bianchini, Ricardo},
+ booktitle = {Proceedings of the 16th European Conference on Computer Systems (EuroSys)},
+ doi = {10.1145/3447786.3456225},
+ isbn = {9781450383349},
+ location = {Online Event, United Kingdom},
+ month = {April},
+ numpages = {16},
+ pages = {1–16},
+ publisher = {Association for Computing Machinery},
+ series = {EuroSys '21},
+ title = {SmartHarvest: Harvesting Idle CPUs Safely and Efficiently in the Cloud},
+ year = {2021}
+}
+

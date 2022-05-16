@@ -1,0 +1,31 @@
+@phdthesis{2002-phdthesis-kozyrakis,
+  author  = "Christos Kozyrakis",
+  title   = "Scalable Vector Media Processors for Embedded Systems ",
+  school  = "University of California at Berkeley",
+  year    = 2002,
+  month   = May,
+  abstarct = {Over the past twenty years, processor designers have concentrated on superscalar and VLIW
+architectures that exploit the instruction-level parallelism (ILP) available in engineering applications
+for workstation systems. Recently, however, the focus in computing has shifted from engineering
+to multimedia applications and from workstations to embedded systems. In this new computing
+environment, the performance, energy consumption, and development cost of ILP processors renders
+them ineffective despite their theoretical generality.
+This thesis focuses on the development of efficient architectures for embedded multimedia
+systems. We argue that it is possible to design processors that deliver high performance, have
+low energy consumption, and are simple to implement. The basis for the argument is the ability
+of vector architectures to exploit efficiently the data-level parallelism in multimedia applications.
+Furthermore, the increasing density of CMOS chips enables the design of cost-effective, on-chip,
+memory systems that can support the high bandwidth necessary for a vector processor.
+To test our hypothesis, we present VIRAM, a vector architecture for multimedia processing. We demonstrate that the vector instructions in VIRAM can capture the data-level parallelism
+in multimedia tasks and lead to smaller code size than RISC, CISC, and VLIW architectures. We
+also describe two scalable microarchitectures for vector media-processors: VIRAM-1 and CODE.
+VIRAM-1 integrates a simple, yet highly parallel, vector processor with an embedded DRAM memory system in a prototype chip with 120 million transistors. CODE uses a composite and decoupled
+organization for the vector processor in order to simplify the vector register file design, tolerate high
+memory latency, and allow for precise exceptions support. Both microarchitectures provide up to 10
+times higher performance than alternative approaches without using out-of-order or wide instruction
+issue techniques that exacerbate energy consumption and design complexity},
+  keywords = {intelligent memory, vector processors, multimedia, energy efficiency},
+   number = {UCB-CSD-02-1183}
+}
+
+

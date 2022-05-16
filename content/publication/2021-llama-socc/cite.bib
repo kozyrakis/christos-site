@@ -1,0 +1,18 @@
+@inproceedings{2021-llama-socc,
+ abstract = {The proliferation of camera-enabled devices and large video repositories has led to a diverse set of video analytics applications. These applications rely on video pipelines, represented as DAGs of operations, to transform videos, process extracted metadata, and answer questions like, "Is this intersection congested?" The latency and resource efficiency of pipelines can be optimized using configurable knobs for each operation (e.g., sampling rate, batch size, or type of hardware used). However, determining efficient configurations is challenging because (a) the configuration search space is exponentially large, and (b) the optimal configuration depends on users' desired latency and cost targets, (c) input video contents may exercise different paths in the DAG and produce a variable amount intermediate results. Existing video analytics and processing systems leave it to the users to manually configure operations and select hardware resources.We present Llama: a heterogeneous and serverless framework for auto-tuning video pipelines. Given an end-to-end latency target, Llama optimizes for cost efficiency by (a) calculating a latency target for each operation invocation, and (b) dynamically running a cost-based optimizer to assign configurations across heterogeneous hardware that best meet the calculated per-invocation latency target. This makes the problem of auto-tuning large video pipelines tractable and allows us to handle input-dependent behavior, conditional branches in the DAG, and execution variability. We describe the algorithms in Llama and evaluate it on a cloud platform using serverless CPU and GPU resources. We show that compared to state-of-the-art cluster and serverless video analytics and processing systems, Llama achieves 7.8x lower latency and 16x cost reduction on average.},
+ address = {New York, NY, USA},
+ author = {Romero, Francisco and Zhao, Mark and Yadwadkar, Neeraja J. and Kozyrakis, Christos},
+ booktitle = {Proceedings of the ACM Symposium on Cloud Computing (SoCC)},
+ doi = {10.1145/3472883.3486972},
+ isbn = {9781450386388},
+ keywords = {scheduling, distributed systems, serverless computing, heterogeneous, video analytics},
+ location = {Seattle, WA, USA},
+ month = {August},
+ numpages = {17},
+ pages = {1–17},
+ publisher = {Association for Computing Machinery},
+ series = {SoCC '21},
+ title = {Llama: A Heterogeneous &amp; Serverless Framework for Auto-Tuning Video Analytics Pipelines},
+ year = {2021}
+}
+

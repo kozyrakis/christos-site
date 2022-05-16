@@ -1,0 +1,18 @@
+@inproceedings{2006-atomos-pldi,
+ abstract = {Atomos is the first programming language with implicit transactions, strong atomicity, and a scalable multiprocessor implementation. Atomos is derived from Java, but replaces its synchronization and conditional waiting constructs with simpler transactional alternatives.The Atomos watch statement allows programmers to specify fine-grained watch sets used with the Atomos retry conditional waiting statement for efficient transactional conflict-driven wakeup even in transactional memory systems with a limited number of transactional contexts. Atomos supports open-nested transactions, which are necessary for building both scalable application programs and virtual machine implementations.The implementation of the Atomos scheduler demonstrates the use of open nesting within the virtual machine and introduces the concept of transactional memory violation handlers that allow programs to recover from data dependency violations without rolling back.Atomos programming examples are given to demonstrate the usefulness of transactional programming primitives. Atomos and Java are compared through the use of several benchmarks. The results demonstrate both the improvements in parallel programming ease and parallel program performance provided by Atomos.},
+ address = {New York, NY, USA},
+ author = {Carlstrom, Brian D. and McDonald, Austen and Chafi, Hassan and Chung, JaeWoong and Minh, Chi Cao and Kozyrakis, Christos and Olukotun, Kunle},
+ booktitle = {Proceedings of the 27th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)},
+ doi = {10.1145/1133981.1133983},
+ isbn = {1595933204},
+ keywords = {java, transactional memory, conditional synchronization, multiprocessor architecture},
+ location = {Ottawa, Ontario, Canada},
+ month = {June},
+ numpages = {13},
+ pages = {1–13},
+ publisher = {Association for Computing Machinery},
+ series = {PLDI '06},
+ title = {The Atomos Transactional Programming Language},
+ year = {2006}
+}
+
