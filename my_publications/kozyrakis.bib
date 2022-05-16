@@ -1,5 +1,4 @@
-
-@article{10.1145/3465406,
+@article{2022-rail-tos,
 author = {Litz, Heiner and Gonzalez, Javier and Klimovic, Ana and Kozyrakis, Christos},
 title = {RAIL: Predictable, Low Tail Latency for NVMe Flash},
 year = {2022},
@@ -20,7 +19,7 @@ keywords = {LightNVM, Linux, SSD, OpenChannel}
 }
 
 
-@inproceedings{10.1145/3503222.3507777,
+@inproceedings{2022-recshard-asplos,
 author = {Sethi, Geet and Acun, Bilge and Agarwal, Niket and Kozyrakis, Christos and Trippel, Caroline and Wu, Carole-Jean},
 title = {RecShard: Statistical Feature-Based Memory Optimization for Industry-Scale Neural Recommendation},
 year = {2022},
@@ -38,7 +37,7 @@ location = {Lausanne, Switzerland},
 series = {ASPLOS 2022}
 }
 
-@inproceedings{10.1145/3503222.3507733,
+@inproceedings{2022-shef-asplos,
 author = {Zhao, Mark and Gao, Mingyu and Kozyrakis, Christos},
 title = {ShEF: Shielded Enclaves for Cloud FPGAs},
 year = {2022},
@@ -53,7 +52,7 @@ pages = {1070–1085},
 numpages = {16}
 }
 
-@inproceedings{10.1145/3503222.3507704,
+@inproceedings{2022-sol-asplos,
 author = {Wang, Yawen and Crankshaw, Daniel and Yadwadkar, Neeraja J. and Berger, Daniel and Kozyrakis, Christos and Bianchini, Ricardo},
 title = {SOL: Safe on-Node Learning in Cloud Platforms},
 year = {2022},
@@ -71,34 +70,28 @@ location = {Lausanne, Switzerland},
 series = {ASPLOS 2022}
 }
 
-@misc{https://doi.org/10.48550/arxiv.2111.07226,
+@misc{2021-practical-arxiv,
   doi = {10.48550/ARXIV.2111.07226},
-  
-  url = {https://arxiv.org/abs/2111.07226},
-  
   author = {Kaffes, Kostis and Yadwadkar, Neeraja J. and Kozyrakis, Christos},
-  
   keywords = {Distributed, Parallel, and Cluster Computing (cs.DC), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  
   title = {Practical Scheduling for Real-World Serverless Computing},
-  
-  publisher = {arXiv},
-  
+  booktitle = {arXiv},
   year = {2021},
-  
+  month = Nov,
   copyright = {arXiv.org perpetual, non-exclusive license}
 }
 
 
-@inproceedings{10.1145/3472883.3486974,
+@inproceedings{2021-faast-socc,
 author = {Romero, Francisco and Chaudhry, Gohar Irfan and Goiri, \'{I}\~{n}igo and Gopa, Pragna and Batum, Paul and Yadwadkar, Neeraja J. and Fonseca, Rodrigo and Kozyrakis, Christos and Bianchini, Ricardo},
-title = {Faa$T: A Transparent Auto-Scaling Cache for Serverless Applications},
+title = {Faa\$T: A Transparent Auto-Scaling Cache for Serverless Applications},
 year = {2021},
+month = Aug,
 isbn = {9781450386388},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 doi = {10.1145/3472883.3486974},
-abstract = {Function-as-a-Service (FaaS) has become an increasingly popular way for users to deploy their applications without the burden of managing the underlying infrastructure. However, existing FaaS platforms rely on remote storage to maintain state, limiting the set of applications that can be run efficiently. Recent caching work for FaaS platforms has tried to address this problem, but has fallen short: it disregards the widely different characteristics of FaaS applications, does not scale the cache based on data access patterns, or requires changes to applications. To address these limitations, we present Faa$T, a transparent auto-scaling distributed cache for serverless applications. Each application gets its own cache. After a function executes and the application becomes inactive, the cache is unloaded from memory with the application. Upon reloading for the next invocation, Faa$T pre-warms the cache with objects likely to be accessed. In addition to traditional compute-based scaling, Faa$T scales based on working set and object sizes to manage cache space and I/O bandwidth. We motivate our design with a comprehensive study of data access patterns on Azure Functions. We implement Faa$T for Azure Functions, and show that Faa$T can improve performance by up to 92\% (57\% on average) for challenging applications, and reduce cost for most users compared to state-of-the-art caching systems, i.e. the cost of having to stand up additional serverful resources.},
+abstract = {Function-as-a-Service (FaaS) has become an increasingly popular way for users to deploy their applications without the burden of managing the underlying infrastructure. However, existing FaaS platforms rely on remote storage to maintain state, limiting the set of applications that can be run efficiently. Recent caching work for FaaS platforms has tried to address this problem, but has fallen short: it disregards the widely different characteristics of FaaS applications, does not scale the cache based on data access patterns, or requires changes to applications. To address these limitations, we present Faa\$T, a transparent auto-scaling distributed cache for serverless applications. Each application gets its own cache. After a function executes and the application becomes inactive, the cache is unloaded from memory with the application. Upon reloading for the next invocation, Fa\$T pre-warms the cache with objects likely to be accessed. In addition to traditional compute-based scaling, Faa\$T scales based on working set and object sizes to manage cache space and I/O bandwidth. We motivate our design with a comprehensive study of data access patterns on Azure Functions. We implement Faa\$T for Azure Functions, and show that Faa\$T can improve performance by up to 92\% (57\% on average) for challenging applications, and reduce cost for most users compared to state-of-the-art caching systems, i.e. the cost of having to stand up additional serverful resources.},
 booktitle = {Proceedings of the ACM Symposium on Cloud Computing (SoCC)},
 pages = {122–137},
 numpages = {16},
@@ -107,10 +100,11 @@ location = {Seattle, WA, USA},
 series = {SoCC '21}
 }
 
-@inproceedings{10.1145/3472883.3486972,
+@inproceedings{2021-llama-socc,
 author = {Romero, Francisco and Zhao, Mark and Yadwadkar, Neeraja J. and Kozyrakis, Christos},
 title = {Llama: A Heterogeneous &amp; Serverless Framework for Auto-Tuning Video Analytics Pipelines},
 year = {2021},
+month = aug,
 isbn = {9781450386388},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -125,10 +119,11 @@ series = {SoCC '21}
 }
 
 
-@inproceedings{10.1145/3477132.3483548,
+@inproceedings{2021-syrup-sosp,
 author = {Kaffes, Kostis and Humphries, Jack Tigar and Mazi\`{e}res, David and Kozyrakis, Christos},
 title = {Syrup: User-Defined Scheduling Across the Stack},
 year = {2021},
+month = oct,
 isbn = {9781450387095},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -142,10 +137,11 @@ location = {Virtual Event, Germany},
 series = {SOSP '21}
 }
 
-@inproceedings{10.1145/3477132.3483542,
+@inproceedings{2021-ghost-sosp,
 author = {Humphries, Jack Tigar and Natu, Neel and Chaugule, Ashwin and Weisse, Ofir and Rhoden, Barret and Don, Josh and Rizzo, Luigi and Rombakh, Oleg and Turner, Paul and Kozyrakis, Christos},
 title = {GhOSt: Fast &amp; Flexible User-Space Delegation of Linux Scheduling},
 year = {2021},
+month = oct,
 isbn = {9781450387095},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -160,7 +156,7 @@ series = {SOSP '21}
 }
 
 
-@inproceedings{10.14778/3485450.3485454,
+@inproceedings{2021-dbos-vldb,
 author = {Skiadopoulos, Athinagoras and Li, Qian and Kraft, Peter and Kaffes, Kostis and Hong, Daniel and Mathew, Shana and Bestor, David and Cafarella, Michael and Gadepally, Vijay and Graefe, Goetz and Kepner, Jeremy and Kozyrakis, Christos and Kraska, Tim and Stonebraker, Michael and Suresh, Lalith and Zaharia, Matei},
 title = {DBOS: A DBMS-Oriented Operating System},
 year = {2021},
@@ -172,16 +168,17 @@ issn = {2150-8097},
 doi = {10.14778/3485450.3485454},
 abstract = {This paper lays out the rationale for building a completely new operating system (OS) stack. Rather than build on a single node OS together with separate cluster schedulers, distributed filesystems, and network managers, we argue that a distributed transactional DBMS should be the basis for a scalable cluster OS. We show herein that such a database OS (DBOS) can do scheduling, file management, and inter-process communication with competitive performance to existing systems. In addition, significantly better analytics can be provided as well as a dramatic reduction in code complexity through implementing OS services as standard database queries, while implementing low-latency transactions and high availability only once.},
 booktitle = {Proceedings of the VLDB Endowment (VLDB)},
-month = {sep},
+month = sep,
 pages = {21–30},
 numpages = {10}
 }
 
 
-@inproceedings{10.1145/3458336.3465274,
+@inproceedings{2021-case-hotos,
 author = {Humphries, Jack Tigar and Kaffes, Kostis and Mazi\`{e}res, David and Kozyrakis, Christos},
 title = {A Case against (Most) Context Switches},
 year = {2021},
+month = jun,
 isbn = {9781450384384},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -196,10 +193,11 @@ series = {HotOS '21}
 
 
 
-@inproceedings{10.1145/3437984.3458837,
+@inproceedings{2021-serving-euromlsys,
 author = {Mendoza, Daniel and Romero, Francisco and Li, Qian and Yadwadkar, Neeraja J. and Kozyrakis, Christos},
 title = {Interference-Aware Scheduling for Inference Serving},
 year = {2021},
+month = apr
 isbn = {9781450382984},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -214,10 +212,11 @@ series = {EuroMLSys '21}
 }
 
 
-@inproceedings{10.1145/3447786.3456225,
+@inproceedings{2021-smartharvest-eurosys,
 author = {Wang, Yawen and Arya, Kapil and Kogias, Marios and Vanga, Manohar and Bhandari, Aditya and Yadwadkar, Neeraja J. and Sen, Siddhartha and Elnikety, Sameh and Kozyrakis, Christos and Bianchini, Ricardo},
 title = {SmartHarvest: Harvesting Idle CPUs Safely and Efficiently in the Cloud},
 year = {2021},
+month = apr,
 isbn = {9781450383349},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -230,7 +229,7 @@ location = {Online Event, United Kingdom},
 series = {EuroSys '21}
 }
 
-@ARTICLE{9380428,
+@ARTICLE{2021-rambo-cal,
 author={Li, Qian and Li, Bin and Mercati, Pietro and Illikkal, Ramesh and Tai, Charlie and Kishinevsky, Michael and Kozyrakis, Christos},
 journal={IEEE Computer Architecture Letters},
 title={RAMBO: Resource Allocation for Microservices Using Bayesian Optimization},
@@ -242,14 +241,15 @@ abstract={Microservices are becoming the defining paradigm of cloud applications
 keywords={Optimization;Resource management;Service level agreements;Servers;Distributed computing;Bayes methods;Distributed computing;Distributed applications;emerging technologies},
 doi={10.1109/LCA.2021.3066142},
 ISSN={1556-6064},
-month=Jan,}
+month=Jan}
 
 
-@inproceedings {273804,
+@inproceedings {2021-infaas-atc,
 author = {Francisco Romero and Qian Li and Neeraja J. Yadwadkar and Christos Kozyrakis},
 title = {{INFaaS}: Automated Model-less Inference Serving},
 booktitle = {2021 USENIX Annual Technical Conference (ATC)},
 year = {2021},
+month = Jul,
 isbn = {978-1-939133-23-6},
 pages = {397--411},
 url = {https://www.usenix.org/conference/atc21/presentation/romero},
@@ -257,10 +257,11 @@ publisher = {USENIX Association},
 month = jul,
 }
 
-@inproceedings{10.5555/3488766.3488835,
+@inproceedings{2020-racksched-osdi,
 author = {Zhu, Hang and Kaffes, Kostis and Chen, Zixu and Liu, Zhenming and Kozyrakis, Christos and Stoica, Ion and Jin, Xin},
 title = {RackSched: A Microsecond-Scale Scheduler for Rack-Scale Computers},
 year = {2020},
+month = Oct,
 isbn = {978-1-939133-19-9},
 publisher = {USENIX Association},
 address = {USA},
@@ -271,10 +272,11 @@ numpages = {16}
 }
 
 
-@inproceedings{10.1145/3419111.3421274,
+@inproceedings{2020-power-socc,
 author = {Kaffes, Kostis and Sbirlea, Dragos and Lin, Yiyan and Lo, David and Kozyrakis, Christos},
 title = {Leveraging Application Classes to Save Power in Highly-Utilized Data Centers},
 year = {2020},
+month = aug,
 isbn = {9781450381376},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -288,7 +290,7 @@ series = {SoCC '20}
 }
 
 
-@inproceedings{10.1007/978-3-030-71055-2_1,
+@inproceedings{2020-dbos-polystore,
 author = {Cafarella, Michael and DeWitt, David and Gadepally, Vijay and Kepner, Jeremy and Kozyrakis, Christos and Kraska, Tim and Stonebraker, Michael and Zaharia, Matei},
 title = {A Polystore Based Database Operating System (DBOS)},
 year = {2020},
@@ -302,25 +304,18 @@ pages = {3–24},
 numpages = {22}
 }
 
-@misc{https://doi.org/10.48550/arxiv.2007.11112,
-  doi = {10.48550/ARXIV.2007.11112},
-  
-  url = {https://arxiv.org/abs/2007.11112},
-  
+@misc{202-dbos-arxiv,
+  doi = {10.48550/ARXIV.2007.11112},  
   author = {Cafarella, Michael and DeWitt, David and Gadepally, Vijay and Kepner, Jeremy and Kozyrakis, Christos and Kraska, Tim and Stonebraker, Michael and Zaharia, Matei},
-  
   keywords = {Operating Systems (cs.OS), Hardware Architecture (cs.AR), Databases (cs.DB), Distributed, Parallel, and Cluster Computing (cs.DC), Networking and Internet Architecture (cs.NI), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  
   title = {DBOS: A Proposal for a Data-Centric Operating System},
-  
-  publisher = {arXiv},
-  
+  howpublished = {arXiv},
   year = {2020},
-  
+  month = jul,
   copyright = {arXiv.org perpetual, non-exclusive license}
 }
 
-@ARTICLE{9069187,
+@ARTICLE{2020asmdb-toppicks,
 author={Nagendra, Nayana Prasad and Ayers, Grant and August, David I. and Cho, Hyoun Kyu and Kanev, Svilen and Kozyrakis, Christos and Krishnamurthy, Trivikram and Litz, Heiner and Moseley, Tipp and Ranganathan, Parthasarathy},
 journal={IEEE Micro},
 title={AsmDB: Understanding and Mitigating Front-End Stalls in Warehouse-Scale Computers},
@@ -328,15 +323,15 @@ year={2020},
 volume={40},
 number={3},
 pages={56-63},
-abstract={It is well known that the datacenters hosting today's cloud services waste a significant number of cycles on front-end stalls. However, prior work has provided little insights about the source of these front-end stalls and how to address them. This work analyzes the cause of instruction cache misses at a fleet-wide scale and proposes a new compiler-driven software code prefetching strategy to reduce instruction caches misses by 90%.},
+abstract={It is well known that the datacenters hosting today's cloud services waste a significant number of cycles on front-end stalls. However, prior work has provided little insights about the source of these front-end stalls and how to address them. This work analyzes the cause of instruction cache misses at a fleet-wide scale and proposes a new compiler-driven software code prefetching strategy to reduce instruction caches misses by 90\%.},
 keywords={Prefetching;Optimization;Servers;Hardware;Databases;Complexity theory},
 doi={10.1109/MM.2020.2986212},
 ISSN={1937-4143},
-month={May},}
+month=may}
 
 
 
-@ARTICLE{9042373,
+@ARTICLE{2020-hotchips-micro,
 author={Kozyrakis, Christos and Bratt, Ian},
 journal={IEEE Micro},
 title={The Hot Chips Renaissance},
@@ -348,13 +343,14 @@ abstract={The articles in this special section report on the technologies and ev
 keywords={Special issues and sections;Meetings;Machine learning;Computer applications;Wafer scale integration},
 doi={10.1109/MM.2020.2977409},
 ISSN={1937-4143},
-month={March},}
+month=mar}
 
 
-@inproceedings{10.1145/3373376.3378514,
+@inproceedings{2020-interstellar-asplos,
 author = {Yang, Xuan and Gao, Mingyu and Liu, Qiaoyi and Setter, Jeff and Pu, Jing and Nayak, Ankita and Bell, Steven and Cao, Kaidi and Ha, Heonjae and Raina, Priyanka and Kozyrakis, Christos and Horowitz, Mark},
 title = {Interstellar: Using Halide's Scheduling Language to Analyze DNN Accelerators},
 year = {2020},
+month = Mar,
 isbn = {9781450371025},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -365,10 +361,11 @@ numpages = {15}
 }
 
 
-@inproceedings{10.1145/3373376.3378498,
+@inproceedings{2020-classify-asplos,
 author = {Ayers, Grant and Litz, Heiner and Kozyrakis, Christos and Ranganathan, Parthasarathy},
 title = {Classifying Memory Access Patterns for Prefetching},
 year = {2020},
+month = Mar,
 isbn = {9781450371025},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -380,7 +377,7 @@ numpages = {14}
 }
 
 
-@article{DBLP:journals/usenix-login/FouladiRILOCZKW19,
+@article{2019-gg-login,
   author    = {Sadjad Fouladi and
                Francisco Romero and
                Dan Iter and
@@ -401,10 +398,11 @@ numpages = {14}
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
-@inproceedings{10.1145/3357223.3362709,
+@inproceedings{2019-functions-socc,
 author = {Kaffes, Kostis and Yadwadkar, Neeraja J. and Kozyrakis, Christos},
 title = {Centralized Core-Granular Scheduling for Serverless Functions},
 year = {2019},
+month = Aug,
 isbn = {9781450369732},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -419,28 +417,22 @@ series = {SoCC '19}
 }
 
 
-@misc{https://doi.org/10.48550/arxiv.1903.07754,
+@misc{2019-frontier-arxiv,
   doi = {10.48550/ARXIV.1903.07754},
-  
-  url = {https://arxiv.org/abs/1903.07754},
-  
   author = {Grossman, Samuel and Kozyrakis, Christos},
-  
   keywords = {Distributed, Parallel, and Cluster Computing (cs.DC), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  
   title = {A New Frontier for Pull-Based Graph Processing},
-  
-  publisher = {arXiv},
-  
+  howpublished = {arXiv},
   year = {2019},
-  
+  month = Mar, 
   copyright = {arXiv.org perpetual, non-exclusive license}
 }
 
-@inproceedings{10.1145/3365609.3365856,
+@inproceedings{2019-gap-hotnets,
 author = {Humphries, Jack Tigar and Kaffes, Kostis and Mazi\`{e}res, David and Kozyrakis, Christos},
 title = {Mind the Gap: A Case for Informed Request Scheduling at the NIC},
 year = {2019},
+month = Nov,
 isbn = {9781450370202},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -455,7 +447,7 @@ series = {HotNets '19}
 
 
 
-@article{DBLP:journals/usenix-login/KlimovicWSTPK19,
+@article{2019-pocket-login,
   author    = {Ana Klimovic and
                Yawen Wang and
                Patrick Stuedi and
@@ -473,10 +465,11 @@ series = {HotNets '19}
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
-@inproceedings{10.5555/3358807.3358848,
+@inproceedings{2019-gg-atc,
 author = {Fouladi, Sadjad and Romero, Francisco and Iter, Dan and Li, Qian and Chatterjee, Shuvo and Kozyrakis, Christos and Zaharia, Matei and Winstein, Keith},
 title = {From Laptop to Lambda: Outsourcing Everyday Jobs to Thousands of Transient Functional Containers},
 year = {2019},
+month = jul,
 isbn = {9781939133038},
 publisher = {USENIX Association},
 address = {USA},
@@ -489,10 +482,11 @@ series = {USENIX ATC '19}
 }
 
 
-@inproceedings{10.1145/3307650.3322234,
+@inproceedings{2019-asmdb-isca,
 author = {Ayers, Grant and Nagendra, Nayana Prasad and August, David I. and Cho, Hyoun Kyu and Kanev, Svilen and Kozyrakis, Christos and Krishnamurthy, Trivikram and Litz, Heiner and Moseley, Tipp and Ranganathan, Parthasarathy},
 title = {AsmDB: Understanding and Mitigating Front-End Stalls in Warehouse-Scale Computers},
 year = {2019},
+month  = jun,
 isbn = {9781450366694},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -507,10 +501,11 @@ series = {ISCA '19}
 
 
 
-@inproceedings{10.1145/3317550.3321443,
+@inproceedings{2019-infaas-hotos,
 author = {Yadwadkar, Neeraja J. and Romero, Francisco and Li, Qian and Kozyrakis, Christos},
 title = {A Case for Managed and Model-Less Inference Serving},
 year = {2019},
+month = may,
 isbn = {9781450367271},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -525,10 +520,11 @@ series = {HotOS '19}
 }
 
 
-@inproceedings{10.1145/3297858.3304014,
+@inproceedings{2019-tangram-asplos,
 author = {Gao, Mingyu and Yang, Xuan and Pu, Jing and Horowitz, Mark and Kozyrakis, Christos},
 title = {TANGRAM: Optimized Coarse-Grained Dataflow for Scalable NN Accelerators},
 year = {2019},
+month = apr,
 isbn = {9781450362405},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -543,10 +539,11 @@ series = {ASPLOS '19}
 }
 
 
-@inproceedings{10.5555/3323234.3323264,
+@inproceedings{2019-shinjuku-nsdi,
 author = {Kaffes, Kostis and Chong, Timothy and Humphries, Jack Tigar and Belay, Adam and Mazi\`{e}res, David and Kozyrakis, Christos},
 title = {Shinjuku: Preemptive Scheduling for µSecond-Scale Tail Latency},
 year = {2019},
+month = Feb,
 isbn = {9781931971492},
 publisher = {USENIX Association},
 address = {USA},
@@ -559,12 +556,13 @@ series = {NSDI'19}
 }
 
 
-@InProceedings{pmlr-v80-hashemi18a,
+@InProceedings{2018-prefetch-icml,
   title = 	 {Learning Memory Access Patterns},
   author =       {Hashemi, Milad and Swersky, Kevin and Smith, Jamie and Ayers, Grant and Litz, Heiner and Chang, Jichuan and Kozyrakis, Christos and Ranganathan, Parthasarathy},
   booktitle = 	 {Proceedings of the 35th International Conference on Machine Learning  (ICML)},
   pages = 	 {1919--1928},
   year = 	 {2018},
+  month = jul,
   editor = 	 {Dy, Jennifer and Krause, Andreas},
   volume = 	 {80},
   series = 	 {Proceedings of Machine Learning Research},
@@ -576,10 +574,11 @@ series = {NSDI'19}
 }
 
 
-@inproceedings{10.5555/3291168.3291200,
+@inproceedings{2018-pocket-osdi,
 author = {Klimovic, Ana and Wang, Yawen and Stuedi, Patrick and Trivedi, Animesh and Pfefferle, Jonas and Kozyrakis, Christos},
 title = {Pocket: Elastic Ephemeral Storage for Serverless Analytics},
 year = {2018},
+month = oct,
 isbn = {9781931971478},
 publisher = {USENIX Association},
 address = {USA},
@@ -592,7 +591,7 @@ series = {OSDI'18},
 month = oct
 }
 
-@article{10.1145/3210560,
+@article{2018-quman-taco,
 author = {Sfakianakis, Yannis and Kozanitis, Christos and Kozyrakis, Christos and Bilas, Angelos},
 title = {<i>QuMan</i>: Profile-Based Improvement of Cluster Utilization},
 year = {2018},
@@ -612,7 +611,7 @@ keywords = {Resource management, slices, I/O caching, isolation, input/output, s
 }
 
 
-@article{10.1145/3232559,
+@article{2018-latency-cacm,
 author = {Delimitrou, Christina and Kozyrakis, Christos},
 title = {Amdahl's Law for Tail Latency},
 year = {2018},
@@ -625,13 +624,13 @@ issn = {0001-0782},
 doi = {10.1145/3232559},
 abstract = {Queueing theoretic models can guide design trade-offs in systems targeting tail latency, not just average performance.},
 journal = {Communications of ACM},
-month = {jul},
+month = jul,
 pages = {65–72},
 numpages = {8}
 }
 
 
-@ARTICLE{8358043,
+@ARTICLE{2018-bolt-toppicks,
 author={Delimitrou, Christina and Kozyrakis, Christos},
 journal={IEEE Micro},
 title={Uncovering the Security Implications of Cloud Multi-Tenancy with Bolt},
@@ -646,7 +645,7 @@ ISSN={1937-4143},
 month={May},}
 
 
-@ARTICLE{8357989,
+@ARTICLE{2018-plasticine-toppicks,
 author={Prabhakar, Raghu and Zhang, Yaqi and Koeplinger, David and Feldman, Matt and Zhao, Tian and Hadjis, Stefan and Pedram, Ardavan and Kozyrakis, Christos and Olukotun, Kunle},
 journal={IEEE Micro},
 title={Plasticine: A Reconfigurable Accelerator for Parallel Patterns},
@@ -661,10 +660,11 @@ ISSN={1937-4143},
 month={May},}
 
 
-@inproceedings{10.5555/3277355.3277431,
+@inproceedings{2018-ephemeral-atc,
 author = {Klimovic, Ana and Wang, Yawen and Kozyrakis, Christos and Stuedi, Patrick and Pfefferle, Jonas and Trivedi, Animesh},
 title = {Understanding Ephemeral Storage for Serverless Analytics},
 year = {2018},
+month = jul,
 isbn = {9781931971447},
 publisher = {USENIX Association},
 address = {USA},
@@ -676,10 +676,11 @@ location = {Boston, MA, USA},
 series = {USENIX ATC '18}
 }
 
-@inproceedings{10.5555/3277355.3277429,
+@inproceedings{2018-selecta-atc,
 author = {Klimovic, Ana and Litz, Heiner and Kozyrakis, Christos},
 title = {Selecta: Heterogeneous Cloud Storage Configuration for Data Analytics},
 year = {2018},
+month = jul,
 isbn = {9781931971447},
 publisher = {USENIX Association},
 address = {USA},
@@ -692,10 +693,11 @@ series = {USENIX ATC '18}
 }
 
 
-@inproceedings{10.1145/3192366.3192379,
+@inproceedings{2018-spatial-pldi,
 author = {Koeplinger, David and Feldman, Matthew and Prabhakar, Raghu and Zhang, Yaqi and Hadjis, Stefan and Fiszel, Ruben and Zhao, Tian and Nardi, Luigi and Pedram, Ardavan and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Spatial: A Language and Compiler for Application Accelerators},
 year = {2018},
+month = jun,
 isbn = {9781450356985},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -710,19 +712,21 @@ series = {PLDI 2018}
 }
 
 
-@misc{hashemi2018learning,
-      title={Learning Memory Access Patterns}, 
-      author={Milad Hashemi and Kevin Swersky and Jamie A. Smith and Grant Ayers and Heiner Litz and Jichuan Chang and Christos Kozyrakis and Parthasarathy Ranganathan},
-      year={2018},
-      eprint={1803.02329},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@misc{2018-prefetch-arxiv,
+  doi = {10.48550/ARXIV.1803.02329},
+  author = {Hashemi, Milad and Swersky, Kevin and Smith, Jamie A. and Ayers, Grant and Litz, Heiner and Chang, Jichuan and Kozyrakis, Christos and Ranganathan, Parthasarathy},
+  keywords = {Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Learning Memory Access Patterns},
+  howpublished = {arXiv},  
+  year = {2018},
+      month = mar,
+  copyright = {arXiv.org perpetual, non-exclusive license}
 }
 
 
 
 
-@INPROCEEDINGS{8327036,
+@INPROCEEDINGS{2018-graphp-hpca,
 author={Zhang, Mingxing and Zhuo, Youwei and Wang, Chao and Gao, Mingyu and Wu, Yongwei and Chen, Kang and Kozyrakis, Christos and Qian, Xuehai},
 booktitle={2018 IEEE International Symposium on High Performance Computer Architecture (HPCA)},
 title={GraphP: Reducing Communication for PIM-Based Graph Processing with Efficient Data Partition},
@@ -734,11 +738,12 @@ abstract={Processing-In-Memory (PIM) is an effective technique that reduces data
 keywords={Bandwidth;Programming;Organizations;Three-dimensional displays;Partitioning algorithms;Memory management;Graph processing;Processing In Memory;Hybrid Memory Cube},
 doi={10.1109/HPCA.2018.00053},
 ISSN={2378-203X},
-month={Feb},}
+month=Feb,}
 
-@INPROCEEDINGS{8327044,
+@INPROCEEDINGS{2018-search-hpca,
 author={Ayers, Grant and Ahn, Jung Ho and Kozyrakis, Christos and Ranganathan, Parthasarathy},
-booktitle={2018 IEEE International Symposium on High Performance Computer Architecture (HPCA)}, title={Memory Hierarchy for Web Search},
+booktitle={2018 IEEE International Symposium on High Performance Computer Architecture (HPCA)},
+title={Memory Hierarchy for Web Search},
 year={2018},
 volume={},
 number={},
@@ -747,12 +752,13 @@ abstract={Online data-intensive services, such as search, serve billions of user
 keywords={Production;Servers;Indexes;Microarchitecture;Web search;Benchmark testing;Hardware;web search;warehouse scale computing;memory systems},
 doi={10.1109/HPCA.2018.00061},
 ISSN={2378-203X},
-month={Feb},}
+month=Feb}
 
-@inproceedings{10.1145/3178487.3178506,
+@inproceedings{2018-pull-ppopp,
 author = {Grossman, Samuel and Litz, Heiner and Kozyrakis, Christos},
 title = {Making Pull-Based Graph Processing Performant},
 year = {2018},
+month = feb,
 isbn = {9781450349826},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -766,7 +772,7 @@ series = {PPoPP '18}
 }
 
 
-@article{10.1145/3154292,
+@article{2018-ix-tocs,
 author = {Belay, Adam and Prekas, George and Primorac, Mia and Klimovic, Ana and Grossman, Samuel and Kozyrakis, Christos and Bugnion, Edouard},
 title = {Corrigendum to “The IX Operating System: Combining Low Latency, High Throughput and Efficiency in a Protected Dataplane”},
 year = {2017},
@@ -778,50 +784,36 @@ number = {3},
 issn = {0734-2071},
 doi = {10.1145/3154292},
 journal = {ACM Transactions Computer Systems},
-month = {dec},
+month = dec,
 articleno = {10},
 numpages = {1}
 }
 
 
-@misc{https://doi.org/10.48550/arxiv.1812.09442,
+@misc{2018-trevor-arxiv,
   doi = {10.48550/ARXIV.1812.09442},
-  
-  url = {https://arxiv.org/abs/1812.09442},
-  
   author = {Bansal, Manu and Cidon, Eyal and Balasingam, Arjun and Gudipati, Aditya and Kozyrakis, Christos and Katti, Sachin},
-  
   keywords = {Distributed, Parallel, and Cluster Computing (cs.DC), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  
   title = {Trevor: Automatic configuration and scaling of stream processing pipelines},
-  
-  publisher = {arXiv},
-  
+  howpublished = {arXiv},
   year = {2018},
-  
+  month = Dec,
   copyright = {arXiv.org perpetual, non-exclusive license}
 }
 
 
-@misc{https://doi.org/10.48550/arxiv.1711.02294,
+@misc{2017-appswitch-arxiv,
   doi = {10.48550/ARXIV.1711.02294},
-  
-  url = {https://arxiv.org/abs/1711.02294},
-  
   author = {Subhraveti, Dinesh and Goli, Sri and Hallyn, Serge and Chamarthy, Ravi and Kozyrakis, Christos},
-  
   keywords = {Networking and Internet Architecture (cs.NI), Operating Systems (cs.OS), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  
   title = {AppSwitch: Resolving the Application Identity Crisis},
-  
-  publisher = {arXiv},
-  
+  howpublished = {arXiv},
   year = {2017},
-  
+  month = Nov,
   copyright = {arXiv.org perpetual, non-exclusive license}
 }
 
-@article{10.1109/MM.2017.50,
+@article{2017-draf-toppicks,
 author = {Gao, Mingyu and Delimitrou, Christina and Niu, Dimin and Malladi, Krishna T. and Zheng, Hongzhong and Brennan, Bob and Kozyrakis, Christos},
 title = {DRAF: A Low-Power DRAM-Based Reconfigurable Acceleration Fabric},
 year = {2017},
@@ -839,7 +831,7 @@ pages = {70–78},
 numpages = {9}
 }
 
-@inproceedings{10.1145/3125502.3125531,
+@inproceedings{2017-n3xt-codes,
 author = {Hwang, William and Aly, Mohamed M. Sabry and Malviya, Yash H. and Gao, Mingyu and Wu, Tony F. and Kozyrakis, Christos and Wong, H.-S. Philip and Mitra, Subhasish},
 title = {3D Nanosystems Enable <i>Embedded</i> Abundant-Data Computing: Special Session Paper},
 year = {2017},
@@ -848,17 +840,18 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 doi = {10.1145/3125502.3125531},
 abstract = {The world's appetite for abundant-data computing, where a massive amount of structured and unstructured data is analyzed, has increased dramatically. The computational demands of these applications, such as deep learning, far exceed the capabilities of today's systems, especially for energy-constrained embedded systems (e.g., mobile systems with limited battery capacity). These demands are unlikely to be met by isolated improvements in transistor or memory technologies, or integrated circuit (IC) architectures alone. Transformative nanosystems, which leverage the unique properties of emerging nanotechnologies to create new IC architectures, are required to deliver unprecedented functionality, performance, and energy efficiency. We show that the projected energy efficiency benefits of domain-specific 3D nanosystems is in the range of 1,000x (quantified using the product of system-level energy consumption and execution time) over today's domain-specific 2D systems with off-chip DRAM. Such a drastic improvement is key to enabling new capabilities such as deep learning in embedded systems.},
-booktitle = {Proceedings of the 12th IEEE/ACM/IFIP International Conference on Hardware/Software Codesign and System Synthesis Companion (CODES)},
+booktitle = {Proceedings of the 12th IEEE/ACM/IFIP International Conference on Hardware/Software Codesign and System Synthesis Companion (CODES+ISSS)},
 articleno = {29},
 numpages = {2},
 location = {Seoul, Republic of Korea},
 series = {CODES '17}
 }
 
-@inproceedings{10.5555/3154690.3154705,
+@inproceedings{2017-persona-atc,
 author = {Byma, Stuart and Whitlock, Sam and Flueratoru, Laura and Tseng, Ethan and Kozyrakis, Christos and Bugnion, Edouard and Larus, James},
 title = {Persona: A High-Performance Bioinformatics Framework},
 year = {2017},
+month = jul,
 isbn = {9781931971386},
 publisher = {USENIX Association},
 address = {USA},
@@ -870,7 +863,7 @@ location = {Santa Clara, CA, USA},
 series = {USENIX ATC '17}
 }
 
-@inproceedings{10.1145/3079856.3080256,
+@inproceedings{2017-plasticine-isca,
 author = {Prabhakar, Raghu and Zhang, Yaqi and Koeplinger, David and Feldman, Matt and Zhao, Tian and Hadjis, Stefan and Pedram, Ardavan and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Plasticine: A Reconfigurable Architecture For Parallel Paterns},
 year = {2017},
@@ -888,10 +881,11 @@ series = {ISCA '17}
 }
 
 
-@inproceedings{10.1145/3037697.3037732,
+@inproceedings{2017-reflex-asplos,
 author = {Klimovic, Ana and Litz, Heiner and Kozyrakis, Christos},
 title = {ReFlex: Remote Flash ≈ Local Flash},
 year = {2017},
+month = apr,
 isbn = {9781450344654},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -907,10 +901,11 @@ series = {ASPLOS '17}
 
 
 
-@inproceedings{10.1145/3037697.3037702,
+@inproceedings{2017-tetris-asplos,
 author = {Gao, Mingyu and Pu, Jing and Yang, Xuan and Horowitz, Mark and Kozyrakis, Christos},
 title = {TETRIS: Scalable and Efficient Neural Network Acceleration with 3D Memory},
 year = {2017},
+month = apr,
 isbn = {9781450344654},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -924,10 +919,11 @@ location = {Xi'an, China},
 series = {ASPLOS '17}
 }
 
-@inproceedings{10.1145/3037697.3037703,
+@inproceedings{2017-bolt-asplos,
 author = {Delimitrou, Christina and Kozyrakis, Christos},
 title = {Bolt: I Know What You Did Last Summer... In The Cloud},
 year = {2017},
+month = apr,
 isbn = {9781450344654},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -942,7 +938,7 @@ series = {ASPLOS '17}
 }
 
 
-@article{10.1145/2997641,
+@article{2016-ix-tocs,
 author = {Belay, Adam and Prekas, George and Primorac, Mia and Klimovic, Ana and Grossman, Samuel and Kozyrakis, Christos and Bugnion, Edouard},
 title = {The IX Operating System: Combining Low Latency, High Throughput, and Efficiency in a Protected Dataplane},
 year = {2016},
@@ -955,14 +951,14 @@ issn = {0734-2071},
 doi = {10.1145/2997641},
 abstract = {The conventional wisdom is that aggressive networking requirements, such as high packet rates for small messages and μs-scale tail latency, are best addressed outside the kernel, in a user-level networking stack. We present ix, a dataplane operating system that provides high I/O performance and high resource efficiency while maintaining the protection and isolation benefits of existing kernels.ix uses hardware virtualization to separate management and scheduling functions of the kernel (control plane) from network processing (dataplane). The dataplane architecture builds upon a native, zero-copy API and optimizes for both bandwidth and latency by dedicating hardware threads and networking queues to dataplane instances, processing bounded batches of packets to completion, and eliminating coherence traffic and multicore synchronization. The control plane dynamically adjusts core allocations and voltage/frequency settings to meet service-level objectives.We demonstrate that ix outperforms Linux and a user-space network stack significantly in both throughput and end-to-end latency. Moreover, ix improves the throughput of a widely deployed, key-value store by up to 6.4\texttimes{} and reduces tail latency by more than 2\texttimes{} . With three varying load patterns, the control plane saves 46\%--54\% of processor energy, and it allows background jobs to run at 35\%--47\% of their standalone throughput.},
 journal = {ACM Transactions on Computer Systems},
-month = {dec},
+month = dec,
 articleno = {11},
 numpages = {39},
 keywords = {Virtualization, latency-critical applications, workload consolidation, dataplane operating systems, microsecond-scale computing, energy-proportionality}
 }
 
 
-@article{10.1109/LCA.2015.2461215,
+@article{2016-sec-cal,
 author = {Delimitrou, Christina and Kozyrakis, Christos},
 title = {Security Implications of Data Mining in Cloud Scheduling},
 year = {2016},
@@ -975,16 +971,17 @@ issn = {1556-6056},
 doi = {10.1109/LCA.2015.2461215},
 abstract = {Cloud providers host an increasing number of popular applications, on the premise of resource flexibility  and cost efficiency. Most of these systems expose virtualized resources of different types and sizes. As instances share the same physical host to increase utilization, they contend on hardware resources, e.g., last-level cache, making them vulnerable to side-channel attacks from co-scheduled applications. In this work we show that using data mining techniques can help an adversarial user of the cloud determine the nature and characteristics of co-scheduled applications and negatively impact their performance through targeted contention injections. We design Bolt, a simple runtime that extracts the sensitivity of co-scheduled applications to various types of interference and uses this signal to determine the type of these applications by applying a set of data mining techniques. We validate the accuracy of Bolt on a 39-server cluster. Bolt correctly identifies the type and characteristics of 81 percent out of 108 victim applications, and constructs specialized contention signals that degrade their performance. We also use Bolt to find the most commonly-run applications on EC2. We hope that underlining such security vulnerabilities in modern cloud facilities will encourage cloud providers to introduce stronger resource isolation primitives in their systems.},
 journal = {IEEE Computer Architecture Letters},
-month = {jul},
+month = jul,
 pages = {109–112},
 numpages = {4}
 }
 
 
-@inproceedings{10.1109/ISCA.2016.51,
+@inproceedings{2016-draf-isca,
 author = {Gao, Mingyu and Delimitrou, Christina and Niu, Dimin and Malladi, Krishna T. and Zheng, Hongzhong and Brennan, Bob and Kozyrakis, Christos},
 title = {DRAF: A Low-Power DRAM-Based Reconfigurable Acceleration Fabric},
 year = {2016},
+month = jun,
 isbn = {9781467389471},
 publisher = {IEEE Press},
 doi = {10.1109/ISCA.2016.51},
@@ -998,10 +995,11 @@ series = {ISCA '16}
 }
 
 
-@inproceedings{10.1109/ISCA.2016.20,
-author = {Koeplinger, David and Delimitrou, Christina and Prabhakar, Raghu and Kozyrakis, Christos and Zhang, Yaqi and Olukotun, Kunle},
+@inproceedings{2016-generate-isca,
+author={Koeplinger, David and Prabhakar, Raghu and Zhang, Yaqi and Delimitrou, Christina and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Automatic Generation of Efficient Accelerators for Reconfigurable Hardware},
 year = {2016},
+month = jun,
 isbn = {9781467389471},
 publisher = {IEEE Press},
 doi = {10.1109/ISCA.2016.20},
@@ -1022,11 +1020,12 @@ series = {ISCA '16}
   number = 	 218568,
   month = 	 May}
 
-@INPROCEEDINGS{7446059,
+@INPROCEEDINGS{2016-hrl-hpca,
 author={Gao, Mingyu and Kozyrakis, Christos},
 booktitle={2016 IEEE International Symposium on High Performance Computer Architecture (HPCA)},
 title={HRL: Efficient and flexible reconfigurable logic for near-data processing},
 year={2016},
+month = Mar,
 volume={},
 number={},
 pages={126-137},
@@ -1034,10 +1033,10 @@ abstract={The energy constraints due to the end of Dennard scaling, the populari
 keywords={Field programmable gate arrays;Arrays;Three-dimensional displays;Bandwidth;Random access memory;Layout},
 doi={10.1109/HPCA.2016.7446059},
 ISSN={2378-203X},
-month={March},}
+month=Mar}
 
 
-@article{10.1145/2882783,
+@article{2016-heracles-toppicks,
 author = {Lo, David and Cheng, Liqun and Govindaraju, Rama and Ranganathan, Parthasarathy and Kozyrakis, Christos},
 title = {Improving Resource Efficiency at Scale with Heracles},
 year = {2016},
@@ -1050,17 +1049,18 @@ issn = {0734-2071},
 doi = {10.1145/2882783},
 abstract = {User-facing, latency-sensitive services, such as websearch, underutilize their computing resources during daily periods of low traffic. Reusing those resources for other tasks is rarely done in production services since the contention for shared resources can cause latency spikes that violate the service-level objectives of latency-sensitive tasks. The resulting under-utilization hurts both the affordability and energy efficiency of large-scale datacenters. With the slowdown in technology scaling caused by the sunsetting of Moore’s law, it becomes important to address this opportunity.We present Heracles, a feedback-based controller that enables the safe colocation of best-effort tasks alongside a latency-critical service. Heracles dynamically manages multiple hardware and software isolation mechanisms, such as CPU, memory, and network isolation, to ensure that the latency-sensitive job meets latency targets while maximizing the resources given to best-effort tasks. We evaluate Heracles using production latency-critical and batch workloads from Google and demonstrate average server utilizations of 90\% without latency violations across all the load and colocation scenarios that we evaluated.},
 journal = {ACM Transactions on Computer Systems},
-month = {may},
+month = may,
 articleno = {6},
 numpages = {33},
 keywords = {interference, QoS, performance isolation, warehouse-scale computer, Datacenter, latency-critical applications, scheduling, resource efficiency}
 }
 
 
-@inproceedings{10.1145/2901318.2901337,
+@inproceedings{2016-flash-eurosys,
 author = {Klimovic, Ana and Kozyrakis, Christos and Thereska, Eno and John, Binu and Kumar, Sanjeev},
 title = {Flash Storage Disaggregation},
 year = {2016},
+month = apr,
 isbn = {9781450342407},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -1075,10 +1075,11 @@ series = {EuroSys '16}
 }
 
 
-@inproceedings{10.1145/2872362.2872415,
+@inproceedings{2016-generate-asplos,
 author = {Prabhakar, Raghu and Koeplinger, David and Brown, Kevin J. and Lee, HyoukJoong and De Sa, Christopher and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Generating Configurable Hardware from Parallel Patterns},
 year = {2016},
+month = Apr,
 isbn = {9781450340915},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -1094,10 +1095,11 @@ series = {ASPLOS '16}
 
 
 
-@inproceedings{10.1145/2872362.2872365,
+@inproceedings{2016-hcloud-asplos,
 author = {Delimitrou, Christina and Kozyrakis, Christos},
 title = {HCloud: Resource-Efficient Provisioning in Shared Cloud Systems},
 year = {2016},
+month = Apr,
 isbn = {9781450340915},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -1111,7 +1113,7 @@ location = {Atlanta, Georgia, USA},
 series = {ASPLOS '16}
 }
 
-@article{10.1109/MC.2015.376,
+@article{2015-n3xt-computer,
 author = {Sabry Aly, Mohamed M. and Gao, Mingyu and Hills, Gage and Lee, Chi-Shuen and Pitner, Greg and Shulaker, Max M. and Wu, Tony F. and Asheghi, Mehdi and Bokor, Jeff and Franchetti, Franz and Goodson, Kenneth E. and Kozyrakis, Christos and Markov, Igor and Olukotun, Kunle and Pileggi, Larry and Pop, Eric and Rabaey, Jan and Re, Christopher and Wong, H.-S. Philip and Mitra, Subhasish},
 title = {Energy-Efficient Abundant-Data Computing: The N3XT 1,000x},
 year = {2015},
@@ -1124,16 +1126,17 @@ issn = {0018-9162},
 doi = {10.1109/MC.2015.376},
 abstract = {Next-generation information technologies will process unprecedented amounts of loosely structured data that overwhelm existing computing systems. N3XT improves the energy efficiency of abundant-data applications 1,000-fold by using new logic and memory technologies, 3D integration with fine-grained connectivity, and new architectures for computation immersed in memory.},
 journal = {IEEE Computer},
-month = {dec},
+month = dec,
 pages = {24–33},
 numpages = {10}
 }
 
 
-@inproceedings{10.1109/PACT.2015.22,
+@inproceedings{2015-ndp-pact,
 author = {Gao, Mingyu and Ayers, Grant and Kozyrakis, Christos},
 title = {Practical Near-Data Processing for In-Memory Analytics Frameworks},
 year = {2015},
+month = Sep,
 isbn = {9781467395243},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -1147,10 +1150,11 @@ series = {PACT '15}
 
 
 
-@inproceedings{10.1145/2806777.2806848,
+@inproceedings{2015-ixctl-socc,
 author = {Prekas, George and Primorac, Mia and Belay, Adam and Kozyrakis, Christos and Bugnion, Edouard},
 title = {Energy Proportionality and Workload Consolidation for Latency-Critical Applications},
 year = {2015},
+month = Aug,
 isbn = {9781450336512},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -1164,10 +1168,11 @@ location = {Kohala Coast, Hawaii},
 series = {SoCC '15}
 }
 
-@inproceedings{10.1145/2806777.2806779,
+@inproceedings{2015-tarcil-socc,
 author = {Delimitrou, Christina and Sanchez, Daniel and Kozyrakis, Christos},
 title = {Tarcil: Reconciling Scheduling Speed and Quality in Large Shared Clusters},
 year = {2015},
+month = Aug,
 isbn = {9781450336512},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -1182,15 +1187,16 @@ series = {SoCC '15}
 }
 
 
-@inproceedings{10.1145/2749469.2749475,
+@inproceedings{2015-heracles-isca,
 author = {Lo, David and Cheng, Liqun and Govindaraju, Rama and Ranganathan, Parthasarathy and Kozyrakis, Christos},
 title = {Heracles: Improving Resource Efficiency at Scale},
 year = {2015},
+month = jun,
 isbn = {9781450334020},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 doi = {10.1145/2749469.2749475},
-abstract = {User-facing, latency-sensitive services, such as websearch, underutilize their computing resources during daily periods of low traffic. Reusing those resources for other tasks is rarely done in production services since the contention for shared resources can cause latency spikes that violate the service-level objectives of latency-sensitive tasks. The resulting under-utilization hurts both the affordability and energy-efficiency of large-scale datacenters. With technology scaling slowing down, it becomes important to address this opportunity.We present Heracles, a feedback-based controller that enables the safe colocation of best-effort tasks alongside a latency-critical service. Heracles dynamically manages multiple hardware and software isolation mechanisms, such as CPU, memory, and network isolation, to ensure that the latency-sensitive job meets latency targets while maximizing the resources given to best-effort tasks. We evaluate Heracles using production latency-critical and batch workloads from Google and demonstrate average server utilizations of 90% without latency violations across all the load and colocation scenarios that we evaluated.},
+abstract = {User-facing, latency-sensitive services, such as websearch, underutilize their computing resources during daily periods of low traffic. Reusing those resources for other tasks is rarely done in production services since the contention for shared resources can cause latency spikes that violate the service-level objectives of latency-sensitive tasks. The resulting under-utilization hurts both the affordability and energy-efficiency of large-scale datacenters. With technology scaling slowing down, it becomes important to address this opportunity.We present Heracles, a feedback-based controller that enables the safe colocation of best-effort tasks alongside a latency-critical service. Heracles dynamically manages multiple hardware and software isolation mechanisms, such as CPU, memory, and network isolation, to ensure that the latency-sensitive job meets latency targets while maximizing the resources given to best-effort tasks. We evaluate Heracles using production latency-critical and batch workloads from Google and demonstrate average server utilizations of 90\% without latency violations across all the load and colocation scenarios that we evaluated.},
 booktitle = {Proceedings of the 42nd International Symposium on Computer Architecture (ISCA)},
 pages = {450–462},
 numpages = {13},
@@ -1201,7 +1207,7 @@ series = {ISCA '15}
 
 
 
-@article{10.1109/MM.2009.31,
+@article{2009-hotchips-micro,
 author = {Kozyrakis, Christos and Waerdt, Jan-Willem van de},
 title = {Guest Editors' Introduction: Hot Chips Turns 20},
 year = {2009},
@@ -1214,12 +1220,12 @@ issn = {0272-1732},
 doi = {10.1109/MM.2009.31},
 abstract = {The five papers in this special issue are extended versions of papers presented at the Hot Chips conference in August 1008.},
 journal = {IEEE Micro},
-month = {mar},
+month = mar,
 pages = {4–5},
 numpages = {2}
 }
 
-@article{10.1145/2735841,
+@article{2015-conv-toppicks,
 author = {Qadeer, Wajahat and Hameed, Rehan and Shacham, Ofer and Venkatesan, Preethi and Kozyrakis, Christos and Horowitz, Mark},
 title = {Convolution Engine: Balancing Efficiency and Flexibility in Specialized Computing},
 year = {2015},
@@ -1232,13 +1238,13 @@ issn = {0001-0782},
 doi = {10.1145/2735841},
 abstract = {General-purpose processors, while tremendously versatile, pay a huge cost for their flexibility by wasting over 99\% of the energy in programmability overheads. We observe that reducing this waste requires tuning data storage and compute structures and their connectivity to the data-flow and data-locality patterns in the algorithms. Hence, by backing off from full programmability and instead targeting key data-flow patterns used in a domain, we can create efficient engines that can be programmed and reused across a wide range of applications within that domain.We present the Convolution Engine (CE)---a programmable processor specialized for the convolution-like data-flow prevalent in computational photography, computer vision, and video processing. The CE achieves energy efficiency by capturing data-reuse patterns, eliminating data transfer overheads, and enabling a large number of operations per memory access. We demonstrate that the CE is within a factor of 2--3\texttimes{} of the energy and area efficiency of custom units optimized for a single kernel. The CE improves energy and area efficiency by 8--15\texttimes{} over data-parallel Single Instruction Multiple Data (SIMD) engines for most image processing applications.&lt;!-- END_PAGE_1 --&gt;},
 journal = {Communications of the ACM},
-month = {mar},
+month = mar,
 pages = {85–93},
 numpages = {9}
 }
 
 
-@ARTICLE{6756704,
+@ARTICLE{2014-paragon-toppicks,
   author={Delimitrou, Christina and Kozyrakis, Christos},
   journal={IEEE Micro}, 
   title={Quality-of-Service-Aware Scheduling in Heterogeneous Data centers with Paragon}, 
@@ -1246,22 +1252,24 @@ numpages = {9}
   volume={34},
   number={3},
   pages={17-30},
+  month = may,
   doi={10.1109/MM.2014.7}}
 
 
 
-@Misc{2014_nvmw_kvs,
+@Misc{2014-kvs-nvmw,
   author = 	 {Shingo Tanaka, Christos Kozyrakis},
   title = 	 {High Performance Hardware-Accelerated Flash Key-Value Store},
   howpublished = {The 2014 Non-volatile Memories Workshop (NVMW)},
   month = 	 Mar,
   year = 	 2014}
 
-@INPROCEEDINGS{6835969,
+@INPROCEEDINGS{2014-turbo-hpca,
 author={Lo, David and Kozyrakis, Christos},
 booktitle={Proceedings of the IEEE 20th International Symposium on High Performance Computer Architecture (HPCA)},
 title={Dynamic management of TurboMode in modern multi-core chips},
 year={2014},
+month = Feb,
 volume={},
 number={},
 pages={603-613},
@@ -1269,12 +1277,13 @@ abstract={Dynamic overclocking of CPUs, or TurboMode, is a feature recently intr
 keywords={Hardware;Servers;Interference;Bridges;Clocks;Quality of service},
 doi={10.1109/HPCA.2014.6835969},
 ISSN={2378-203X},
-month={Feb},}
+month=Feb,}
 
-@inproceedings{10.5555/2685048.2685053,
+@inproceedings{2014-ix-osdi,
 author = {Belay, Adam and Prekas, George and Klimovic, Ana and Grossman, Samuel and Kozyrakis, Christos and Bugnion, Edouard},
 title = {IX: A Protected Dataplane Operating System for High Throughput and Low Latency},
 year = {2014},
+month = oct,
 isbn = {9781931971164},
 publisher = {USENIX Association},
 address = {USA},
@@ -1286,10 +1295,11 @@ location = {Broomfield, CO},
 series = {OSDI'14}
 }
 
-@inproceedings{10.5555/2665671.2665718,
+@inproceedings{2014-proportional-isca,
 author = {Lo, David and Cheng, Liqun and Govindaraju, Rama and Barroso, Luiz Andr\'{e} and Kozyrakis, Christos},
 title = {Towards Energy Proportionality for Large-Scale Latency-Critical Workloads},
 year = {2014},
+month = jun,
 isbn = {9781479943944},
 publisher = {IEEE Press},
 abstract = {Reducing the energy footprint of warehouse-scale computer (WSC) systems is key to their affordability, yet difficult to achieve in practice. The lack of energy proportionality of typical WSC hardware and the fact that important workloads (such as search) require all servers to remain up regardless of traffic intensity renders existing power management techniques ineffective at reducing WSC energy use.We present PEGASUS, a feedback-based controller that significantly improves the energy proportionality of WSC systems, as demonstrated by a real implementation in a Google search cluster. PEGASUS uses request latency statistics to dynamically adjust server power management limits in a fine-grain manner, running each server just fast enough to meet global service-level latency objectives. In large cluster experiments, PEGASUS reduces power consumption by up to 20\%. We also estimate that a distributed version of PEGASUS can nearly double these savings},
@@ -1300,10 +1310,11 @@ location = {Minneapolis, Minnesota, USA},
 series = {ISCA '14}
 }
 
-@inproceedings{10.1145/2592798.2592821,
+@inproceedings{2014-usec-eurosys,
 author = {Leverich, Jacob and Kozyrakis, Christos},
 title = {Reconciling High Server Utilization and Sub-Millisecond Quality-of-Service},
 year = {2014},
+month = apr,
 isbn = {9781450327046},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -1316,10 +1327,11 @@ location = {Amsterdam, The Netherlands},
 series = {EuroSys '14}
 }
 
-@inproceedings{10.1145/2541940.2541941,
+@inproceedings{2014-quasar-asplos,
 author = {Delimitrou, Christina and Kozyrakis, Christos},
 title = {Quasar: Resource-Efficient and QoS-Aware Cluster Management},
 year = {2014},
+month = mar,
 isbn = {9781450323055},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -1334,10 +1346,12 @@ series = {ASPLOS '14}
 }
 
 
-@INPROCEEDINGS{6704667,
+@INPROCEEDINGS{2013-ibench-iiswc,
 author={Delimitrou, Christina and Kozyrakis, Christos},
-booktitle={2013 IEEE International Symposium on Workload Characterization (IISWC)}, title={iBench: Quantifying interference for datacenter applications},
+booktitle={2013 IEEE International Symposium on Workload Characterization (IISWC)},
+title={iBench: Quantifying interference for datacenter applications},
 year={2013},
+month = sep,
 volume={},
 number={},
 pages={23-33},
@@ -1345,9 +1359,9 @@ abstract={Interference between co-scheduled applications is one of the major rea
 keywords={Interference;Benchmark testing;Bandwidth;Kernel;Servers;Sensitivity;Prefetching},
 doi={10.1109/IISWC.2013.6704667},
 ISSN={},
-month={Sep.},}
+month=sep}
 
-@article{10.1145/2556583,
+@article{2013-paragon-tocs,
 author = {Delimitrou, Christina and Kozyrakis, Christos},
 title = {QoS-Aware Scheduling in Heterogeneous Datacenters with Paragon},
 year = {2013},
@@ -1360,16 +1374,17 @@ issn = {0734-2071},
 doi = {10.1145/2556583},
 abstract = {Large-scale datacenters (DCs) host tens of thousands of diverse applications each day. However, interference between colocated workloads and the difficulty of matching applications to one of the many hardware platforms available can degrade performance, violating the quality of service (QoS) guarantees that many cloud workloads require. While previous work has identified the impact of heterogeneity and interference, existing solutions are computationally intensive, cannot be applied online, and do not scale beyond a few applications.We present Paragon, an online and scalable DC scheduler that is heterogeneity- and interference-aware. Paragon is derived from robust analytical methods, and instead of profiling each application in detail, it leverages information the system already has about applications it has previously seen. It uses collaborative filtering techniques to quickly and accurately classify an unknown incoming workload with respect to heterogeneity and interference in multiple shared resources. It does so by identifying similarities to previously scheduled applications. The classification allows Paragon to greedily schedule applications in a manner that minimizes interference and maximizes server utilization. After the initial application placement, Paragon monitors application behavior and adjusts the scheduling decisions at runtime to avoid performance degradations. Additionally, we design ARQ, a multiclass admission control protocol that constrains application waiting time. ARQ queues applications in separate classes based on the type of resources they need and avoids long queueing delays for easy-to-satisfy workloads in highly-loaded scenarios. Paragon scales to tens of thousands of servers and applications with marginal scheduling overheads in terms of time or state.We evaluate Paragon with a wide range of workload scenarios, on both small and large-scale systems, including 1,000 servers on EC2. For a 2,500-workload scenario, Paragon enforces performance guarantees for 91\% of applications, while significantly improving utilization. In comparison, heterogeneity-oblivious, interference-oblivious, and least-loaded schedulers only provide similar guarantees for 14\%, 11\%, and 3\% of workloads. The differences are more striking in oversubscribed scenarios where resource efficiency is more critical.},
 journal = {ACM Transactions Computer Systems},
-month = {dec},
+month = dec,
 articleno = {12},
 numpages = {34},
 keywords = {interference, cloud computing, QoS, Datacenter, resource-efficiency, scheduling, heterogeneity}
 }
 
-@inproceedings{10.1145/2486159.2486175,
+@inproceedings{2013-locality-spaa,
 author = {Yoo, Richard M. and Hughes, Christopher J. and Kim, Changkyu and Chen, Yen-Kuang and Kozyrakis, Christos},
 title = {Locality-Aware Task Management for Unstructured Parallelism: A Quantitative Limit Study},
 year = {2013},
+month = jul,
 isbn = {9781450315722},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -1384,11 +1399,12 @@ series = {SPAA '13}
 }
 
 
-@inproceedings {180174,
+@inproceedings {2013-qos-icac,
 author = {Christina Delimitrou and Nick Bambos and Christos Kozyrakis},
 title = {{QoS-Aware} Admission Control in Heterogeneous Datacenters},
 booktitle = {10th International Conference on Autonomic Computing (ICAC)},
 year = {2013},
+month = jun,
 isbn = {978-1-931971-02-7},
 address = {San Jose, CA},
 pages = {291--296},
@@ -1397,14 +1413,14 @@ publisher = {USENIX Association},
 month = jun,
 }
 
-@Misc{2013_transact_nac,
+@Misc{2013-nack-transact,
   author = 	 {Woongki Baek, Richard Yoo, Christos Kozyrakis},
   title = 	 {Enhanced Concurrency Control with Transactional NACKs},
   howpublished = {Proceedings of the 8th ACM SIGPLAN Workshop on Transactional Computing (TRANSACT)},
   month = 	 Mar,
   year = 	 2013}
 
-@article{DBLP:journals/suscom/KazandjievaHGLK13,
+@article{2013-energy-scis,
   author    = {Maria A. Kazandjieva and
                Brandon Heller and
                Omprakash Gnawali and
@@ -1422,10 +1438,11 @@ month = jun,
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
-@inproceedings{10.1145/2485922.2485963,
+@inproceedings{2013-zsim-isca,
 author = {Sanchez, Daniel and Kozyrakis, Christos},
 title = {ZSim: Fast and Accurate Microarchitectural Simulation of Thousand-Core Systems},
 year = {2013},
+month = jun,
 isbn = {9781450320795},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -1439,10 +1456,11 @@ series = {ISCA '13}
 }
 
 
-@inproceedings{10.1145/2485922.2485925,
+@inproceedings{2013-convolution-isca,
 author = {Qadeer, Wajahat and Hameed, Rehan and Shacham, Ofer and Venkatesan, Preethi and Kozyrakis, Christos and Horowitz, Mark A.},
 title = {Convolution Engine: Balancing Efficiency &amp; Flexibility in Specialized Computing},
 year = {2013},
+month = jun,
 isbn = {9781450320795},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -1456,10 +1474,11 @@ location = {Tel-Aviv, Israel},
 series = {ISCA '13}
 }
 
-@inproceedings{10.5555/2485288.2485611,
+@inproceedings{2013-resource-date,
 author = {Kozyrakis, Christos},
 title = {Resource Efficient Computing for Warehouse-Scale Datacenters},
 year = {2013},
+month = mar,
 isbn = {9781450321532},
 publisher = {EDA Consortium},
 address = {San Jose, CA, USA},
@@ -1471,10 +1490,11 @@ location = {Grenoble, France},
 series = {DATE '13}
 }
 
-@inproceedings{10.1145/2451116.2451125,
+@inproceedings{2013-paragon-asplos,
 author = {Delimitrou, Christina and Kozyrakis, Christos},
 title = {Paragon: QoS-Aware Scheduling for Heterogeneous Datacenters},
 year = {2013},
+month = Mar,
 isbn = {9781450318709},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -1490,7 +1510,7 @@ series = {ASPLOS '13}
 
 
 
-@article{10.1109/MM.2013.44,
+@article{2013-hotchips-micro,
 author = {Kozyrakis, Christos and Zahir, Rumi},
 title = {Selected Research from Hot Chips 24},
 year = {2013},
@@ -1503,14 +1523,14 @@ issn = {0272-1732},
 doi = {10.1109/MM.2013.44},
 abstract = {This introduction to the special issue introduces the articles selected for publication from Hot Chips 24.},
 journal = {IEEE Micro},
-month = {mar},
+month = mar,
 pages = {6–7},
 numpages = {2},
 keywords = {low voltage, Program processors, Special issues and sections, Multicore processing, instructed set, energy-efficient scaling, processing engine, Multiprocessors, Hot Chips}
 }
 
 
-@article{10.1109/L-CA.2012.10,
+@article{2013-netflix-cal,
 author = {Delimitrou, Christina and Kozyrakis, Christos},
 title = {The Netflix Challenge: Datacenter Edition},
 year = {2013},
@@ -1529,10 +1549,11 @@ numpages = {4},
 keywords = {Computer System Implementation, Computer Systems Organization, Large and Medium (“Mainframe”), simulation of multiple-processor systems}
 }
 
-@inproceedings{10.1109/IISWC.2012.6402896,
+@inproceedings{2012-echo-iiswc,
 author = {Delimitrou, Christina and Sankar, Sriram and Kansal, Aman and Kozyrakis, Christos},
 title = {ECHO: Recreating Network Traffic Maps for Datacenters with Tens of Thousands of Servers},
 year = {2012},
+month = nov,
 isbn = {9781467345316},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -1544,10 +1565,11 @@ numpages = {11},
 series = {IISWC '12}
 }
 
-@inproceedings{10.5555/2387880.2387913,
+@inproceedings{2012-dune-osdi,
 author = {Belay, Adam and Bittau, Andrea and Mashtizadeh, Ali and Terei, David and Mazi\`{e}res, David and Kozyrakis, Christos},
 title = {Dune: Safe User-Level Access to Privileged CPU Features},
 year = {2012},
+month = oct,
 isbn = {9781931971966},
 publisher = {USENIX Association},
 address = {USA},
@@ -1560,16 +1582,17 @@ series = {OSDI'12}
 }
 
 
-@inproceedings{10.1145/2380445.2380524,
+@inproceedings{2012-custom-codes,
 author = {Hong, Sungpack and Oguntebi, Tayo and Casper, Jared and Bronson, Nathan and Kozyrakis, Christos and Olukotun, Kunle},
 title = {A Case of System-Level Hardware/Software Co-Design and Co-Verification of a Commodity Multi-Processor System with Custom Hardware},
 year = {2012},
+month = oct,
 isbn = {9781450314268},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 doi = {10.1145/2380445.2380524},
 abstract = {This paper presents an interesting system-level co-design and co-verification case study for a non-trivial design where multiple high-performing x86 processors and custom hardware were connected through a coherent interconnection fabric. In functional verification of such a system, we used a processor bus functional model (BFM) to combine native software execution with a cycle-accurate interconnect simulator and an HDL simulator. However, we found that significant extensions need to be made to the conventional BFM methodology in order to capture various data-race cases in simulation, which eventually happen in modern multi-processor systems. Especially essential were faithful implementations of the memory consistency model and cache coherence protocol, as well as timing randomization. We demonstrate how such a co-simulation environment can be constructed from existing tools and software. Lessons from our study can similarly be applied to design and verification of other tightly-coupled systems.},
-booktitle = {Proceedings of the 8th IEEE/ACM/IFIP International Conference on Hardware/Software Codesign and System Synthesis (CODES)},
+booktitle = {Proceedings of the 8th IEEE/ACM/IFIP International Conference on Hardware/Software Codesign and System Synthesis (CODES+ISSS)},
 pages = {513–520},
 numpages = {8},
 keywords = {co-simulation, bus functional model, fpga prototyping, transactional memory, co-verification},
@@ -1577,7 +1600,7 @@ location = {Tampere, Finland},
 series = {CODES+ISSS '12}
 }
 
-@article{10.1109/L-CA.2011.37,
+@article{2012-dcstorage-cal,
 author = {Delimitrou, Christina and Sankar, Sriram and Vaid, Kushagra and Kozyrakis, Christos},
 title = {Decoupling Datacenter Storage Studies from Access to Large-Scale Applications},
 year = {2012},
@@ -1590,16 +1613,17 @@ issn = {1556-6056},
 doi = {10.1109/L-CA.2011.37},
 abstract = {Suboptimal storage design has significant cost and power impact in large-scale datacenters (DCs). Performance, power and cost-optimized systems require deep understanding of target workloads, and mechanisms to effectively model different storage design choices. Traditional benchmarking is invalid in cloud data-stores, representative storage profiles are hard to obtain, while replaying applications in different storage configurations is impractical both in cost and time. Despite these issues, current workload generators are not able to reproduce key aspects of real application patterns (e.g., spatial/temporal locality, I/O intensity). In this paper, we propose a modeling and generation framework for large-scale storage applications. As part of this framework we use a state diagram-based storage model, extend it to a hierarchical representation, and implement a tool that consistently recreates DC application I/O loads. We present the principal features of the framework that allow accurate modeling and generation of storage workloads, and the validation process performed against ten original DC application traces. Finally, we explore two practical applications of this methodology: SSD caching and defragmentation benefits on enterprise storage. Since knowledge of the workload's spatial and temporal locality is necessary to model these use cases, our framework was instrumental in quantifying their performance benefits. The proposed methodology provides detailed understanding of the storage activity of large-scale applications, and enables a wide spectrum of storage studies, without the requirement to access application code and full application deployment.},
 journal = {IEEE Compututer Architecture Letters},
-month = {jul},
+month = jul,
 pages = {53–56},
 numpages = {4},
 keywords = {Very large scale integration, Modeling techniques, Modeling of computer architecture, Computational modeling, Generators, Storage area networks, Super (very large) computers, Electronic mail, Load modeling, Throughput, Mass storage}
 }
 
-@inproceedings{10.5555/2337159.2337164,
+@inproceedings{2012-dram-isca,
 author = {Malladi, Krishna T. and Lee, Benjamin C. and Nothaft, Frank A. and Kozyrakis, Christos and Periyathambi, Karthika and Horowitz, Mark},
 title = {Towards Energy-Proportional Datacenter Memory with Mobile DRAM},
 year = {2012},
+month = jun,
 isbn = {9781450316422},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -1613,10 +1637,11 @@ series = {ISCA '12}
 
 
 
-@inproceedings{10.1109/IGCC.2012.6322264,
+@inproceedings{2012-green-igcc,
 author = {Kazandjieva, Maria and Heller, Brandon and Gnawali, Omprakash and Levis, Philip and Kozyrakis, Christos},
 title = {Green Enterprise Computing Data: Assumptions and Realities},
 year = {2012},
+month = jun,
 isbn = {9781467321556},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -1629,7 +1654,7 @@ series = {IGCC '12}
 }
 
 
-@article{10.1109/MM.2012.19,
+@article{2012-vantage-toppicks,
 author = {Sanchez, Daniel and Kozyrakis, Christos},
 title = {Scalable and Efficient Fine-Grained Cache Partitioning with Vantage},
 year = {2012},
@@ -1642,13 +1667,13 @@ issn = {0272-1732},
 doi = {10.1109/MM.2012.19},
 abstract = {The Vantage cache-partitioning technique enables configurability and quality-of-service guarantees in large-scale chip multiprocessors with shared caches. Caches can have hundreds of partitions with sizes specified at cache line granularity, while maintaining high associativity and strict isolation among partitions},
 journal = {IEEE Micro},
-month = {may},
+month = may,
 pages = {26–37},
 numpages = {12},
 keywords = {Vantage, QoS, cache memories, cache partitioning, design styles, hardware, memory hierarchy, microarchitecture implementation considerations, memory structures, computer systems organization, parallel architectures, processor architectures, CMP}
 }
 
-@article{10.1145/2133382.2133386,
+@article{2012-subsetting-taco,
 author = {Ahn, Jung Ho and Jouppi, Norman P. and Kozyrakis, Christos and Leverich, Jacob and Schreiber, Robert S.},
 title = {Improving System Energy Efficiency with Memory Rank Subsetting},
 year = {2012},
@@ -1661,16 +1686,17 @@ issn = {1544-3566},
 doi = {10.1145/2133382.2133386},
 abstract = {VLSI process technology scaling has enabled dramatic improvements in the capacity and peak bandwidth of DRAM devices. However, current standard DDRx DIMM memory interfaces are not well tailored to achieve high energy efficiency and performance in modern chip-multiprocessor-based computer systems. Their suboptimal performance and energy inefficiency can have a significant impact on system-wide efficiency since much of the system power dissipation is due to memory power. New memory interfaces, better suited for future many-core systems, are needed. In response, there are recent proposals to enhance the energy efficiency of main-memory systems by dividing a memory rank into subsets, and making a subset rather than a whole rank serve a memory request.We holistically assess the effectiveness of rank subsetting from system-wide performance, energy-efficiency, and reliability perspectives. We identify the impact of rank subsetting on memory power and processor performance analytically, compare two promising rank-subsetting proposals, Multicore DIMM and mini-rank, and verify our analysis by simulating a chip-multiprocessor system using multithreaded and consolidated workloads. We extend the design of Multicore DIMM for high-reliability systems and show that compared with conventional chipkill approaches, rank subsetting can lead to much higher system-level energy efficiency and performance at the cost of additional DRAM devices. This holistic assessment shows that rank subsetting offers compelling alternatives to existing processor-memory interfaces for future DDR systems.},
 journal = {ACM Transactions on Architecture and Code Optimization},
-month = {mar},
+month = mar,
 articleno = {4},
 numpages = {28},
 keywords = {overfetch, rank subsetting, Memory system, mini-rank, DRAM, multicore DIMM}
 }
 
-@inproceedings{10.1109/HPCA.2012.6168950,
+@inproceedings{2012-scd-hpca,
 author = {Sanchez, Daniel and Kozyrakis, Christos},
 title = {SCD: A Scalable Coherence Directory with Flexible Sharer Set Encoding},
 year = {2012},
+month = feb,
 isbn = {9781467308274},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -1683,10 +1709,11 @@ series = {HPCA '12}
 }
 
 
-@inproceedings{10.1109/IISWC.2011.6114196,
+@inproceedings{2011-decoupling-iiswc,
 author = {Delimitrou, Christina and Sankar, Sriram and Vaid, Kushagra and Kozyrakis, Christos},
 title = {Decoupling Datacenter Studies from Access to Large-Scale Applications: A Modeling Approach for Storage Workloads},
 year = {2011},
+month = nov,
 isbn = {9781457720635},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -1698,15 +1725,16 @@ numpages = {10},
 series = {IISWC '11}
 }
 
-@inproceedings{10.1145/2043106.2043107,
+@inproceedings{2011-mars-mobiheld,
 author = {Cidon, Asaf and London, Tomer M. and Katti, Sachin and Kozyrakis, Christos and Rosenblum, Mendel},
 title = {MARS: Adaptive Remote Execution for Multi-Threaded Mobile Devices},
 year = {2011},
+month = oct,
 isbn = {9781450309806},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 doi = {10.1145/2043106.2043107},
-abstract = {Mobile devices face a growing demand to support computationally intensive applications like 3D graphics and computer vision. However, these devices are inherently limited by processor power density and device battery life. Dynamic remote execution addresses this problem, by enabling mobile devices to opportunistically offload computations to a remote server. We envision remote execution as a new type of cloud-based heterogeneous computing resource, or a "Cloud-on-Chip", which would be managed as a system resource as if it were a local CPU, with a highly variable wireless interconnect. To realize this vision, we introduce MARS, the first adaptive, online and lightweight RPC-based remote execution scheduler supporting multi-threaded and multi-core systems. MARS uses a novel efficient offloading decision algorithm that takes into account the inherent trade-offs between communication and computation delays and power consumption. Due to its lightweight design, MARS runs on the device itself, instantly adapts its decisions to changing wireless resources, and supports any number of threads and cores. We evaluated MARS using a trace-based simulator driven by real world measurements on augmented reality, face recognition and video game applications. MARS achieves an average speedup of 57% and 33% higher energy savings over the best static client-server partitions.},
+abstract = {Mobile devices face a growing demand to support computationally intensive applications like 3D graphics and computer vision. However, these devices are inherently limited by processor power density and device battery life. Dynamic remote execution addresses this problem, by enabling mobile devices to opportunistically offload computations to a remote server. We envision remote execution as a new type of cloud-based heterogeneous computing resource, or a "Cloud-on-Chip", which would be managed as a system resource as if it were a local CPU, with a highly variable wireless interconnect. To realize this vision, we introduce MARS, the first adaptive, online and lightweight RPC-based remote execution scheduler supporting multi-threaded and multi-core systems. MARS uses a novel efficient offloading decision algorithm that takes into account the inherent trade-offs between communication and computation delays and power consumption. Due to its lightweight design, MARS runs on the device itself, instantly adapts its decisions to changing wireless resources, and supports any number of threads and cores. We evaluated MARS using a trace-based simulator driven by real world measurements on augmented reality, face recognition and video game applications. MARS achieves an average speedup of 57\% and 33\% higher energy savings over the best static client-server partitions.},
 booktitle = {Proceedings of the 3rd ACM SOSP Workshop on Networking, Systems, and Applications on Mobile Handhelds (MobiHeld)},
 articleno = {1},
 numpages = {6},
@@ -1714,10 +1742,11 @@ location = {Cascais, Portugal},
 series = {MobiHeld '11}
 }
 
-@inproceedings{10.1109/PACT.2011.9,
+@inproceedings{2011-dynamic-pact,
 author = {Sanchez, Daniel and Lo, David and Yoo, Richard M. and Sugerman, Jeremy and Kozyrakis, Christos},
 title = {Dynamic Fine-Grain Scheduling of Pipeline Parallelism},
 year = {2011},
+motn = sep,
 isbn = {9780769545660},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -1729,7 +1758,7 @@ numpages = {11},
 series = {PACT '11}
 }
 
-@article{10.1145/2001269.2001291,
+@article{2011-gp-cacm,
 author = {Hameed, Rehan and Qadeer, Wajahat and Wachs, Megan and Azizi, Omid and Solomatnikov, Alex and Lee, Benjamin C. and Richardson, Stephen and Kozyrakis, Christos and Horowitz, Mark},
 title = {Understanding Sources of Inefficiency in General-Purpose Chips},
 year = {2011},
@@ -1742,16 +1771,17 @@ issn = {0001-0782},
 doi = {10.1145/2001269.2001291},
 abstract = {Scaling the performance of a power limited processor requires decreasing the energy expended per instruction executed, since energy/op * op/second is power. To better understand what improvement in processor efficiency is possible, and what must be done to capture it, we quantify the sources of the performance and energy overheads of a 720p HD H.264 encoder running on a general-purpose four-processor CMP system. The initial overheads are large: the CMP was 500 x less energy efficient than an Application Specific Integrated Circuit (ASIC) doing the same job. We explore methods to eliminate these overheads by transforming the CPU into a specialized system for H.264 encoding. Broadly applicable optimizations like single instruction, multiple data (SIMD) units improve CMP performance by 14 x and energy by 10x, which is still 50x worse than an ASIC. The problem is that the basic operation costs in H.264 are so small that even with a SIMD unit doing over 10 ops per cycle, 90\% of the energy is still overhead. Achieving ASIC-like performance and effciency requires algorithm-specifc optimizations. For each subalgorithm of H.264, we create a large, specialized functional/storage unit capable of executing hundreds of operations per instruction. This improves energy effciency by 160x (instead of 10x), and the final customized CMP reaches the same performance and within 3x of an ASIC solution's energy in comparable area.},
 journal = {Communications of the ACM},
-month = {oct},
+month = oct,
 pages = {85–93},
 numpages = {9}
 }
 
 
-@inproceedings{10.1007/978-3-642-32627-1_11,
+@inproceedings{2011-modeling-tpctc,
 author = {Delimitrou, Christina and Sankar, Sriram and Khessib, Badriddine and Vaid, Kushagra and Kozyrakis, Christos},
 title = {Time and Cost-Efficient Modeling and Generation of Large-Scale TPCC/TPCE/TPCH Workloads},
 year = {2011},
+month = aug,
 isbn = {9783642326264},
 publisher = {Springer-Verlag},
 address = {Berlin, Heidelberg},
@@ -1765,7 +1795,7 @@ location = {Seattle, WA},
 series = {TPCTC'11}
 }
 
-@article{10.1145/1965724.1965751,
+@article{2011-ramcloud-cacm,
 author = {Ousterhout, John and Agrawal, Parag and Erickson, David and Kozyrakis, Christos and Leverich, Jacob and Mazi\`{e}res, David and Mitra, Subhasish and Narayanan, Aravind and Ongaro, Diego and Parulkar, Guru and Rosenblum, Mendel and Rumble, Stephen M. and Stratmann, Eric and Stutsman, Ryan},
 title = {The Case for RAMCloud},
 year = {2011},
@@ -1778,16 +1808,17 @@ issn = {0001-0782},
 doi = {10.1145/1965724.1965751},
 abstract = {With scalable high-performance storage entirely in DRAM, RAMCloud will enable a new breed of data-intensive applications.},
 journal = {Communications of the ACM},
-month = {jul},
+month = jul,
 pages = {121–130},
 numpages = {10}
 }
 
 
-@inproceedings{10.1109/ICDCSW.2011.45,
+@inproceedings{2011-modeling-icdcs,
 author = {Delimitrou, Christina and Kozyrakis, Christos},
 title = {Cross-Examination of Datacenter Workload Modeling Techniques},
 year = {2011},
+month = jun,
 isbn = {9780769543864},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -1802,10 +1833,11 @@ series = {ICDCSW '11}
 
 
 
-@inproceedings{10.1145/1996092.1996095,
+@inproceedings{2011-phoenix-mapreduces,
 author = {Talbot, Justin and Yoo, Richard M. and Kozyrakis, Christos},
 title = {Phoenix++: Modular MapReduce for Shared-Memory Systems},
 year = {2011},
+month = jun,
 isbn = {9781450307000},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -1820,10 +1852,11 @@ series = {MapReduce '11}
 }
 
 
-@inproceedings{10.1145/2000064.2000073,
+@inproceedings{2011-vantage-isca,
 author = {Sanchez, Daniel and Kozyrakis, Christos},
 title = {Vantage: Scalable and Efficient Fine-Grain Cache Partitioning},
 year = {2011},
+month = jun,
 isbn = {9781450304726},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -1838,10 +1871,11 @@ series = {ISCA '11}
 }
 
 
-@inproceedings{10.5555/2015039.2015529,
+@inproceedings{2011-gen-ispass,
 author = {Delimitrou, Christina and Sankar, Sriram and Vaid, Kushagra and Kozyrakis, Christos},
 title = {Storage I/O Generation and Replay for Datacenter Applications},
 year = {2011},
+month = apr,
 isbn = {9781612843674},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -1854,10 +1888,11 @@ series = {ISPASS '11}
 
 
 
-@inproceedings{10.1145/1950365.1950372,
+@inproceedings{2011-tm-asplos,
 author = {Casper, Jared and Oguntebi, Tayo and Hong, Sungpack and Bronson, Nathan G. and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Hardware Acceleration of Transactional Memory on Commodity Systems},
 year = {2011},
+month = mar,
 isbn = {9781450302661},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -1871,10 +1906,11 @@ location = {Newport Beach, California, USA},
 series = {ASPLOS XVI}
 }
 
-@inproceedings{10.1109/MICRO.2010.20,
+@inproceedings{2010-zcache-toppicks,
 author = {Sanchez, Daniel and Kozyrakis, Christos},
 title = {The ZCache: Decoupling Ways and Associativity},
 year = {2010},
+month = oct,
 isbn = {9780769542997},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -1887,10 +1923,11 @@ keywords = {multi-core, performance, cache, energy efficiency, associativity},
 series = {MICRO '43}
 }
 
-@inproceedings{10.1109/IISWC.2010.5648812,
+@inproceedings{2010-eigenbench-iiswc,
 author = {Sungpack Hong and Oguntebi, Tayo and Casper, Jared and Bronson, Nathan and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Eigenbench: A Simple Exploration Tool for Orthogonal TM Characteristics},
 year = {2010},
+month = sep,
 isbn = {9781424492978},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -1902,7 +1939,7 @@ numpages = {11},
 series = {IISWC '10}
 }
 
-@article{10.1109/MM.2010.73,
+@article{2010-insights-micro,
 author = {Kozyrakis, Christos and Kansal, Aman and Sankar, Sriram and Vaid, Kushagra},
 title = {Server Engineering Insights for Large-Scale Online Services},
 year = {2010},
@@ -1915,17 +1952,18 @@ issn = {0272-1732},
 doi = {10.1109/MM.2010.73},
 abstract = {The rapid growth of online services in the last decade has led to the development of large data centers to host these workloads. These large-scale online, user-facing services have unique engineering and capacity provisioning design requirements. The authors explore these requirements, focusing on system balancing, the impact of technology trends, and the challenges of online service workloads.},
 journal = {IEEE Micro},
-month = {jul},
+month = jul,
 pages = {8–19},
 numpages = {12},
 keywords = {server balancing, data centers, hardware, online services, data centers, large-scale production services, server design, server balancing, scale-out design, total cost of ownership, hardware, scale-out design, server design, total cost of ownership, online services, large-scale production services}
 }
 
 
-@inproceedings{10.1145/1815961.1815968,
+@inproceedings{2010-gp-isca,
 author = {Hameed, Rehan and Qadeer, Wajahat and Wachs, Megan and Azizi, Omid and Solomatnikov, Alex and Lee, Benjamin C. and Richardson, Stephen and Kozyrakis, Christos and Horowitz, Mark},
 title = {Understanding Sources of Inefficiency in General-Purpose Chips},
 year = {2010},
+month = jun,
 isbn = {9781450300537},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -1940,10 +1978,11 @@ series = {ISCA '10}
 }
 
 
-@inproceedings{10.1145/1810479.1810528,
+@inproceedings{2010-nested-spaa,
 author = {Baek, Woongki and Bronson, Nathan and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Implementing and Evaluating Nested Parallel Transactions in Software Transactional Memory},
 year = {2010},
+month = jun,
 isbn = {9781450300797},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -1957,10 +1996,11 @@ location = {Thira, Santorini, Greece},
 series = {SPAA '10}
 }
 
-@inproceedings{10.1145/1810085.1810097,
+@inproceedings{2010-nested-ics,
 author = {Baek, Woongki and Bronson, Nathan and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Making Nested Parallel Transactions Practical Using Lightweight Hardware Support},
 year = {2010},
+month = jun,
 isbn = {9781450300186},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -1974,7 +2014,7 @@ location = {Tsukuba, Ibaraki, Japan},
 series = {ICS '10}
 }
 
-@article{10.1145/1736065.1736069,
+@article{2010-interconnect-taco,
 author = {Sanchez, Daniel and Michelogiannakis, George and Kozyrakis, Christos},
 title = {An Analysis of On-Chip Interconnection Networks for Large-Scale Chip Multiprocessors},
 year = {2010},
@@ -1987,16 +2027,17 @@ issn = {1544-3566},
 doi = {10.1145/1736065.1736069},
 abstract = {With the number of cores of chip multiprocessors (CMPs) rapidly growing as technology scales down, connecting the different components of a CMP in a scalable and efficient way becomes increasingly challenging. In this article, we explore the architectural-level implications of interconnection network design for CMPs with up to 128 fine-grain multithreaded cores. We evaluate and compare different network topologies using accurate simulation of the full chip, including the memory hierarchy and interconnect, and using a diverse set of scientific and engineering workloads.We find that the interconnect has a large impact on performance, as it is responsible for 60\% to 75\% of the miss latency. Latency, and not bandwidth, is the primary performance constraint, since, even with many threads per core and workloads with high miss rates, networks with enough bandwidth can be efficiently implemented for the system scales we consider. From the topologies we study, the flattened butterfly consistently outperforms the mesh and fat tree on all workloads, leading to performance advantages of up to 22\%. We also show that considering interconnect and memory hierarchy together when designing large-scale CMPs is crucial, and neglecting either of the two can lead to incorrect conclusions. Finally, the effect of the interconnect on overall performance becomes more important as the number of cores increases, making interconnection choices especially critical when scaling up.},
 journal = {ACM Transactions on Architure and Code Optimization},
-month = {may},
+month = may,
 articleno = {4},
 numpages = {28},
 keywords = {Networks-on-chip, hierarchical networks, chip multiprocessors}
 }
 
-@inproceedings{10.1109/NOCS.2010.10,
+@inproceedings{2010-bufferless-nocs,
 author = {Michelogiannakis, George and Sanchez, Daniel and Dally, William J. and Kozyrakis, Christos},
 title = {Evaluating Bufferless Flow Control for On-Chip Networks},
 year = {2010},
+month = may,
 isbn = {9780769540535},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -2009,10 +2050,11 @@ keywords = {Networks, Multiprocessor interconnection, Flow control, Buffers},
 series = {NOCS '10}
 }
 
-@inproceedings{10.1109/FCCM.2010.41,
+@inproceedings{2010-farm-fccm,
 author = {Oguntebi, Tayo and Hong, Sungpack and Casper, Jared and Bronson, Nathan and Kozyrakis, Christos and Olukotun, Kunle},
 title = {FARM: A Prototyping Environment for Tightly-Coupled, Heterogeneous Architectures},
 year = {2010},
+month = may,
 isbn = {9780769540566},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -2026,7 +2068,7 @@ series = {FCCM '10}
 }
 
 
-@article{10.1145/1773912.1773933,
+@article{2010-pointless-osr,
 author = {Dalton, Michael and Kannan, Hari and Kozyrakis, Christos},
 title = {Tainting is Not Pointless},
 year = {2010},
@@ -2039,16 +2081,17 @@ issn = {0163-5980},
 doi = {10.1145/1773912.1773933},
 abstract = {Pointer tainting is a form of Dynamic Information Flow Tracking used primarily to prevent software security attacks such as buffer overflows. Researchers have also applied pointer tainting to malware and virus analysis.A recent paper by Slowinska and Bos has criticized pointer tainting as a security mechanism, arguing that it is has serious, inherent false positive and false negative defects. We present a rebuttal that addresses the confusion due to the two uses of pointer tainting in security literature. We clarify that many of the arguments against pointer tainting apply only to its use as a malware and virus analysis platform, but do not apply to the application of pointer tainting to memory corruption protection. Hence, we argue that pointer tainting remains a useful and promising technique for robust protection against memory corruption attacks.},
 journal = {SIGOPS Operating Systems Review (OSR)},
-month = {apr},
+month = apr,
 pages = {88–92},
 numpages = {5},
 keywords = {memory corruption, software security, virus detection, malware detection, dynamic information flow tracking, pointer tainting, buffer overflow}
 }
 
-@inproceedings{10.1109/ICECCS.2010.30,
+@inproceedings{2010-checker-iceccs,
 author = {Baek, Woongki and Bronson, Nathan and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Implementing and Evaluating a Model Checker for Transactional Memory Systems},
 year = {2010},
+month = mar,
 isbn = {9780769540153},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -2061,10 +2104,11 @@ keywords = {Transactional Memory, Model Checking},
 series = {ICECCS '10}
 }
 
-@inproceedings{10.1145/1736020.1736055,
+@inproceedings{2010-adm-asplos,
 author = {Sanchez, Daniel and Yoo, Richard M. and Kozyrakis, Christos},
 title = {Flexible Architectural Support for Fine-Grain Scheduling},
 year = {2010},
+month = mar,
 isbn = {9781605588391},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2079,7 +2123,7 @@ series = {ASPLOS XV}
 }
 
 
-@article{10.1109/L-CA.2009.46,
+@article{2010-gating-cal,
 author = {Leverich, Jacob and Monchiero, Matteo and Talwar, Vanish and Ranganathan, Parthasarathy and Kozyrakis, Christos},
 title = {Power Management of Datacenter Workloads Using Per-Core Power Gating},
 year = {2009},
@@ -2090,9 +2134,9 @@ volume = {8},
 number = {2},
 issn = {1556-6056},
 doi = {10.1109/L-CA.2009.46},
-abstract = {While modern processors offer a wide spectrum of software-controlled power modes, most datacenters only rely on Dynamic Voltage and Frequency Scaling (DVFS, a.k.a. P-states) to achieve energy efficiency. This paper argues that, in the case of datacenter workloads, DVFS is not the only option for processor power management. We make the case for per-core power gating (PCPG) as an additional power management knob for multi-core processors. PCPG is the ability to cut the voltage supply to selected cores, thus reducing to almost zero the leakage power for the gated cores. Using a testbed based on a commercial 4-core chip and a set of real-world application traces from enterprise environments, we have evaluated the potential of PCPG. We show that PCPG can significantly reduce a processor's energy consumption (up to 40\%) without significant performance overheads. When compared to DVFS, PCPG is highly effective saving up to 30\% more energy than DVFS. When DVFS and PCPG operate together they can save up to almost 60%.},
+abstract = {While modern processors offer a wide spectrum of software-controlled power modes, most datacenters only rely on Dynamic Voltage and Frequency Scaling (DVFS, a.k.a. P-states) to achieve energy efficiency. This paper argues that, in the case of datacenter workloads, DVFS is not the only option for processor power management. We make the case for per-core power gating (PCPG) as an additional power management knob for multi-core processors. PCPG is the ability to cut the voltage supply to selected cores, thus reducing to almost zero the leakage power for the gated cores. Using a testbed based on a commercial 4-core chip and a set of real-world application traces from enterprise environments, we have evaluated the potential of PCPG. We show that PCPG can significantly reduce a processor's energy consumption (up to 40\%) without significant performance overheads. When compared to DVFS, PCPG is highly effective saving up to 30\% more energy than DVFS. When DVFS and PCPG operate together they can save up to almost 60\%.},
 journal = {IEEE Computer Architure Letters (CAL)},
-month = {jul},
+month = jul,
 pages = {48–51},
 numpages = {4},
 keywords = {System architectures, integration and modeling, Energy-aware systems}
@@ -2100,7 +2144,7 @@ keywords = {System architectures, integration and modeling, Energy-aware systems
 
 
 
-@article{10.1145/1713254.1713276,
+@article{2010-ramcloud-osr,
 author = {Ousterhout, John and Agrawal, Parag and Erickson, David and Kozyrakis, Christos and Leverich, Jacob and Mazi\`{e}res, David and Mitra, Subhasish and Narayanan, Aravind and Parulkar, Guru and Rosenblum, Mendel and Rumble, Stephen M. and Stratmann, Eric and Stutsman, Ryan},
 title = {The Case for RAMClouds: Scalable High-Performance Storage Entirely in DRAM},
 year = {2010},
@@ -2121,10 +2165,11 @@ numpages = {14}
 
 
 
-@inproceedings{10.1145/1654059.1654102,
+@inproceedings{2009-dram-sc,
 author = {Ahn, Jung Ho and Jouppi, Norman P. and Kozyrakis, Christos and Leverich, Jacob and Schreiber, Robert S.},
 title = {Future Scaling of Processor-Memory Interfaces},
 year = {2009},
+month = Nov,
 isbn = {9781605587448},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2137,7 +2182,7 @@ location = {Portland, Oregon},
 series = {SC '09}
 }
 
-@article{10.1145/1740390.1740405,
+@article{2010-hadoop-osr,
 author = {Leverich, Jacob and Kozyrakis, Christos},
 title = {On the Energy (in)Efficiency of Hadoop Clusters},
 year = {2010},
@@ -2150,11 +2195,11 @@ issn = {0163-5980},
 doi = {10.1145/1740390.1740405},
 abstract = {Distributed processing frameworks, such as Yahoo!'s Hadoop and Google's MapReduce, have been successful at harnessing expansive datacenter resources for large-scale data analysis. However, their effect on datacenter energy efficiency has not been scrutinized. Moreover, the filesystem component of these frameworks effectively precludes scale-down of clusters deploying these frameworks (i.e. operating at reduced capacity). This paper presents our early work on modifying Hadoop to allow scale-down of operational clusters. We find that running Hadoop clusters in fractional configurations can save between 9\% and 50\% of energy consumption, and that there is a tradeoff between performance energy consumption. We also outline further research into the energy-efficiency of these frameworks.},
 journal = {SIGOPS Operating Systems Review},
-month = {mar},
+month = mar,
 pages = {61–65},
 numpages = {5}
 }
-@InProceedings{2009_hotchips_ppl,
+@InProceedings{2009-ppl-hotchips,
   author = 	 {Christos Kozyrakis, Kunle Olukotun},
   title = 	 { The Stanford Pervasive Parallelism Lab},
   booktitle = {Technical Record of the 21st Hot Chips Symposium},
@@ -2162,10 +2207,11 @@ numpages = {5}
   month = 	 Aug}
 
 
-@inproceedings{10.1109/IISWC.2009.5306783,
+@inproceedings{2009-phoenix-iiswc,
 author = {Yoo, Richard M. and Romano, Anthony and Kozyrakis, Christos},
 title = {Phoenix Rebirth: Scalable MapReduce on a Large-Scale Shared-Memory System},
 year = {2009},
+month = Oct,
 isbn = {9781424451562},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -2179,10 +2225,11 @@ series = {IISWC '09}
 
 
 
-@inproceedings{10.5555/1855768.1855785,
+@inproceedings{2009-nemesis-usenixsc,
 author = {Dalton, Michael and Kozyrakis, Christos and Zeldovich, Nickolai},
 title = {Nemesis: Preventing Authentication &amp; Access Control Vulnerabilities in Web Applications},
 year = {2009},
+month = aug,
 publisher = {USENIX Association},
 address = {USA},
 abstract = {This paper presents Nemesis, a novel methodology for mitigating authentication bypass and access control vulnerabilities in existing web applications. Authentication attacks occur when a web application authenticates users unsafely, granting access to web clients that lack the appropriate credentials. Access control attacks occur when an access control check in the web application is incorrect or missing, allowing users unauthorized access to privileged resources such as databases and files. Such attacks are becoming increasingly common, and have occurred in many high-profile applications, such as IIS [10] and WordPress [31], as well as 14\% of surveyed web sites [30]. Nevertheless, none of the currently available tools can fully mitigate these attacks.Nemesis automatically determines when an application safely and correctly authenticates users, by using Dynamic Information Flow Tracking (DIFT) techniques to track the flow of user credentials through the application's language runtime. Nemesis combines authentication information with programmer-supplied access control rules on files and database entries to automatically ensure that only properly authenticated users are granted access to any privileged resources or data. A study of seven popular web applications demonstrates that a prototype of Nemesis is effective at mitigating attacks, requires little programmer effort, and imposes minimal runtime overhead. Finally, we show that Nemesis can also improve the precision of existing security tools, such as DIFT analyses for SQL injection prevention, by providing runtime information about user authentication.},
@@ -2194,11 +2241,12 @@ series = {SSYM'09}
 }
 
 
-@INPROCEEDINGS{5270347,
+@INPROCEEDINGS{2009-dift-dsn,
 author={Kannan, Hari and Dalton, Michael and Kozyrakis, Christos},
 booktitle={Proceedings of the IEEE/IFIP International Conference on Dependable Systems Networks (DSN)}, 
 title={Decoupling Dynamic Information Flow Tracking with a dedicated coprocessor},
 year={2009},
+month = jun,
 volume={},
 number={},
 pages={105-114},
@@ -2206,14 +2254,15 @@ abstract={Dynamic information flow tracking (DIFT) is a promising security techn
 keywords={Coprocessors;Hardware;Pipelines;Information security;Software performance;Computer architecture;Clocks;Cost function;Frequency synchronization;Engines;Software security;Semantic Vulnerabilities;Dynamic information flow tracking;Processor architecture;Coprocessors},
 doi={10.1109/DSN.2009.5270347},
 ISSN={2158-3927},
-month={June},}
+month=Jun}
 
 
 
-@inproceedings{10.1145/1555754.1555805,
+@inproceedings{2009-smart-isca,
 author = {Firoozshahian, Amin and Solomatnikov, Alex and Shacham, Ofer and Asgar, Zain and Richardson, Stephen and Kozyrakis, Christos and Horowitz, Mark},
 title = {A Memory System Design Framework: Creating Smart Memories},
 year = {2009},
+month = jun,
 isbn = {9781605585260},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2226,10 +2275,11 @@ keywords = {memory systems, reconfigurable architecture, stream programming, cac
 location = {Austin, TX, USA},
 series = {ISCA '09}
 }
-@inproceedings{10.1145/1542275.1542297,
+@inproceedings{2009-snapshot-ics,
 author = {Chung, Jaewoong and Baek, Woongki and Kozyrakis, Christos},
 title = {Fast Memory Snapshot for Concurrent Programmingwithout Synchronization},
 year = {2009},
+month = jun,
 isbn = {9781605584980},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2244,10 +2294,11 @@ series = {ICS '09}
 }
 
 
-@inproceedings{10.1145/1480881.1480909,
+@inproceedings{2009-fdbopt-popl,
 author = {Bronson, Nathan G. and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Feedback-Directed Barrier Optimization in a Strongly Isolated STM},
 year = {2009},
+month = jan,
 isbn = {9781605583792},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2261,10 +2312,11 @@ location = {Savannah, GA, USA},
 series = {POPL '09}
 }
 
-@inproceedings{10.5555/1855741.1855757,
+@inproceedings{2008-loki-osdi,
 author = {Zeldovich, Nickolai and Kannan, Hari and Dalton, Michael and Kozyrakis, Christos},
 title = {Hardware Enforcement of Application Security Policies Using Tagged Memory},
 year = {2008},
+month = dec,
 publisher = {USENIX Association},
 address = {USA},
 abstract = {Computers are notoriously insecure, in part because application security policies do not map well onto traditional protection mechanisms such as Unix user accounts or hardware page tables. Recent work has shown that application policies can be expressed in terms of information flow restrictions and enforced in an OS kernel, providing a strong assurance of security. This paper shows that enforcement of these policies can be pushed largely into the processor itself, by using tagged memory support, which can provide stronger security guarantees by enforcing application security even if the OS kernel is compromised.We present the Loki tagged memory architecture, along with a novel operating system structure that takes advantage of tagged memory to enforce application security policies in hardware. We built a full-system prototype of Loki by modifying a synthesizable SPARC core, mapping it to an FPGA board, and porting HiStar, a Unix-like operating system, to run on it. One result is that Loki allows HiStar, an OS already designed to have a small trusted kernel, to further reduce the amount of trusted code by a factor of two, and to enforce security despite kernel compromises. Using various workloads, we also demonstrate that HiStar running on Loki incurs a low performance overhead.},
@@ -2275,10 +2327,11 @@ location = {San Diego, California},
 series = {OSDI'08}
 }
 
-@inproceedings{10.5555/1855610.1855613,
+@inproceedings{2008-powermodel-hotpower,
 author = {Rivoire, Suzanne and Ranganathan, Parthasarathy and Kozyrakis, Christos},
 title = {A Comparison of High-Level Full-System Power Models},
 year = {2008},
+month = dec,
 publisher = {USENIX Association},
 address = {USA},
 abstract = {Dynamic power management in enterprise environments requires an understanding of the relationship between resource utilization and system-level power consumption. Power models based on resource utilization have been proposed in the context of enabling specific energy-efficiency optimizations on specific machines, but the accuracy and portability of different approaches to modeling have not been systematically compared. In this work, we use a common infrastructure to fit a family of high-level full-system power models, and we compare these models over a wide variation of workloads and machines, from a laptop to a server. This analysis shows that a model based on OS utilization metrics and CPU performance counters is generally most accurate across the machines and workloads tested. It is particularly useful for machines whose dynamic power consumption is not dominated by the CPU, as well as machines with aggressively power-managed CPUs, two classes of systems that are increasingly prevalent.},
@@ -2290,7 +2343,7 @@ series = {HotPower'08}
 }
 
 
-@article{10.1145/1455650.1455651,
+@article{2008-memory-taco,
 author = {Leverich, Jacob and Arakida, Hideho and Solomatnikov, Alex and Firoozshahian, Amin and Horowitz, Mark and Kozyrakis, Christos},
 title = {Comparative Evaluation of Memory Models for Chip Multiprocessors},
 year = {2008},
@@ -2303,14 +2356,14 @@ issn = {1544-3566},
 doi = {10.1145/1455650.1455651},
 abstract = {There are two competing models for the on-chip memory in Chip Multiprocessor (CMP) systems: hardware-managed coherent caches and software-managed streaming memory. This paper performs a direct comparison of the two models under the same set of assumptions about technology, area, and computational capabilities. The goal is to quantify how and when they differ in terms of performance, energy consumption, bandwidth requirements, and latency tolerance for general-purpose CMPs. We demonstrate that for data-parallel applications on systems with up to 16 cores, the cache-based and streaming models perform and scale equally well. For certain applications with little data reuse, streaming scales better due to better bandwidth use and macroscopic software prefetching. However, the introduction of techniques such as hardware prefetching and nonallocating stores to the cache-based model eliminates the streaming advantage. Overall, our results indicate that there is not sufficient advantage in building streaming memory systems where all on-chip memory structures are explicitly managed. On the other hand, we show that streaming at the programming model level is particularly beneficial, even with the cache-based model, as it enhances locality and creates opportunities for bandwidth optimizations. Moreover, we observe that stream programming is actually easier with the cache-based model because the hardware guarantees correct, best-effort execution even when the programmer cannot fully regularize an application's code.},
 journal = {ACM Transactions on Architure and Code Optimization},
-month = {dec},
+month = dec,
 articleno = {12},
 numpages = {30},
 keywords = {locality optimizations, parallel programming, cache coherence, streaming memory, Chip multiprocessors}
 }
 
 
-@article{10.1145/1364782.1364800,
+@article{2008-tm-cacm,
 author = {Larus, James and Kozyrakis, Christos},
 title = {Transactional Memory},
 year = {2008},
@@ -2323,14 +2376,14 @@ issn = {0001-0782},
 doi = {10.1145/1364782.1364800},
 abstract = {Is TM the answer for improving parallel programming?},
 journal = {Communications of the ACM},
-month = {jul},
+month = jul,
 pages = {80–88},
 numpages = {9}
 }
 
 
 
-@INPROCEEDINGS{4636089,
+@INPROCEEDINGS{2008-stamp-iiswc,
 author={Chi Cao Minh and JaeWoong Chung and Kozyrakis, Christos and Olukotun, Kunle},
 booktitle={Proceedings of the IEEE International Symposium on Workload Characterization (IISWC)},
 title={STAMP: Stanford Transactional Applications for Multi-Processing},
@@ -2342,12 +2395,13 @@ abstract={Transactional Memory (TM) is emerging as a promising technology to sim
 keywords={Benchmark testing;Data structures;Software;Bioinformatics;Hardware;Synchronization;Genomics},
 doi={10.1109/IISWC.2008.4636089},
 ISSN={},
-month={Sep.},}
+month=sep,}
 
-@inproceedings{10.5555/1496711.1496738,
+@inproceedings{2008-buffer-usenixsec,
 author = {Dalton, Michael and Kannan, Hari and Kozyrakis, Christos},
 title = {Real-World Buffer Overflow Protection for Userspace &amp; Kernelspace},
 year = {2008},
+month = jul,
 publisher = {USENIX Association},
 address = {USA},
 abstract = {Despite having been around for more than 25 years, buffer overflow attacks are still a major security threat for deployed software. Existing techniques for buffer overflow detection provide partial protection at best as they detect limited cases, suffer from many false positives, require source code access, or introduce large performance overheads. Moreover, none of these techniques are easily applicable to the operating system kernel.This paper presents a practical security environment for buffer overflow detection in userspace and kernelspace code. Our techniques build upon dynamic information flow tracking (DIFT) and prevent the attacker from overwriting pointers in the application or operating system. Unlike previous work, our technique does not have false positives on unmodified binaries, protects both data and control pointers, and allows for practical hardware support. Moreover, it is applicable to the kernel and provides robust detection of buffer overflows and user/kernel pointer dereferences. Using a full system prototype of a Linux workstation (hardware and software), we demonstrate our security approach in practice and discuss the major challenges for robust buffer overflow protection in real-world software.},
@@ -2358,10 +2412,11 @@ location = {San Jose, CA},
 series = {SS'08}
 }
 
-@inproceedings{10.1145/1378533.1378596,
+@inproceedings{2008-snapshot-spaa,
 author = {Chung, JaeWoong and Seo, Jiwon and Baek, Woongki and CaoMinh, Chi and McDonald, Austen and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Improving Software Concurrency with Hardware-Assisted Memory Snapshot},
 year = {2008},
+month = jun,
 isbn = {9781595939739},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2375,10 +2430,11 @@ location = {Munich, Germany},
 series = {SPAA '08}
 }
 
-@inproceedings{10.1145/1378533.1378599,
+@inproceedings{2008-ased-spaa,
 author = {Chung, JaeWoong and Baek, Woongki and Bronson, Nathan Grasso and Seo, Jiwon and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Ased: Availability, Security, and Debugging Support Usingtransactional Memory},
 year = {2008},
+month = jun,
 isbn = {9781595939739},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2393,11 +2449,12 @@ series = {SPAA '08}
 }
 
 
-@INPROCEEDINGS{4658646,
+@INPROCEEDINGS{2008-dbt-hpca,
 author={JaeWoong Chung and Dalton, Michael and Kannan, Hari and Kozyrakis, Christos},
 booktitle={Proceedings of the IEEE 14th International Symposium on High Performance Computer Architecture (HPCA)},
 title={Thread-safe dynamic binary translation using transactional memory},
 year={2008},
+month = feb,
 volume={},
 number={},
 pages={279-289},
@@ -2405,12 +2462,13 @@ abstract={Dynamic binary translation (DBT) is a runtime instrumentation techniqu
 keywords={Optimization;Security;Hardware;Instruments;Runtime;Software;Buffer overflow},
 doi={10.1109/HPCA.2008.4658646},
 ISSN={2378-203X},
-month={Feb},}
+month=Feb,}
 
-@inproceedings{10.1145/1229428.1229439,
+@inproceedings{2007-tmsync-ppopp,
 author = {Adl-Tabatabai, Ali-Reza and Dice, David and Herlihy, Maurice and Shavit, Nir and Kozyrakis, Christos and von Praun, Christoph and Scott, Michael},
 title = {Potential Show-Stoppers for Transactional Synchronization},
 year = {2007},
+month = mar,
 isbn = {9781595936028},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2422,10 +2480,11 @@ location = {San Jose, California, USA},
 series = {PPoPP '07}
 }
 
-@inproceedings{10.1145/1229428.1229484,
+@inproceedings{2007-tmprog-ppopp,
 author = {Adl-Tabatabai, Ali-Reza and Kozyrakis, Christos and Saha, Bratin},
 title = {Transactional Programming in a Multi-Core Environment},
 year = {2007},
+month = mar,
 isbn = {9781595936028},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2439,7 +2498,7 @@ location = {San Jose, California, USA},
 series = {PPoPP '07}
 }
 
-@article{10.1109/MC.2007.436,
+@article{2007-energy-computer,
 author = {Rivoire, Suzanne and Shah, Mehul A. and Ranganathan, Parthasarathy and Kozyrakis, Christos and Meza, Justin},
 title = {Models and Metrics to Enable Energy-Efficiency Optimizations},
 year = {2007},
@@ -2452,16 +2511,17 @@ issn = {0018-9162},
 doi = {10.1109/MC.2007.436},
 abstract = {Power consumption and energy efficiency are important factors in the initial design and day-to-day management of computer systems. Researchers and system designers need benchmarks that characterize energy efficiency to evaluate systems and identify promising new technologies. To predict the effects of new designs and configurations, they also need accurate methods of modeling power consumption.},
 journal = {IEEE Computer},
-month = {dec},
+month = dec,
 pages = {39–48},
 numpages = {10},
 keywords = {power models, JouleSort benchmark, green computing, energy-efficiency optimizations}
 }
 
-@inproceedings{10.1145/1289881.1289926,
+@inproceedings{2007-bliss-cases,
 author = {Zmily, Ahmad and Kozyrakis, Christos},
 title = {A Low Power Front-End for Embedded Processors Using a Block-Aware Instruction Set},
 year = {2007},
+month = sep,
 isbn = {9781595938268},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2476,10 +2536,11 @@ series = {CASES '07}
 }
 
 
-@inproceedings{10.5555/1299042.1299064,
+@inproceedings{2007-opentm-pact,
 author = {Baek, Woongki and Minh, Chi Cao and Trautmann, Martin and Kozyrakis, Christos and Olukotun, Kunle},
 title = {The OpenTM Transactional Application Programming Interface},
 year = {2007},
+month = sep,
 isbn = {0769529445},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -2491,10 +2552,11 @@ series = {PACT '07}
 }
 
 
-@inproceedings{10.1145/1247480.1247522,
+@inproceedings{2007-joulesort-sigmod,
 author = {Rivoire, Suzanne and Shah, Mehul A. and Ranganathan, Parthasarathy and Kozyrakis, Christos},
 title = {JouleSort: A Balanced Energy-Efficiency Benchmark},
 year = {2007},
+month = jun,
 isbn = {9781595936868},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2509,10 +2571,11 @@ series = {SIGMOD '07}
 }
 
 
-@inproceedings{10.1145/1250662.1250722,
+@inproceedings{2007-raksha-isca,
 author = {Dalton, Michael and Kannan, Hari and Kozyrakis, Christos},
 title = {Raksha: A Flexible Information Flow Architecture for Software Security},
 year = {2007},
+month = jun,
 isbn = {9781595937063},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2526,10 +2589,11 @@ location = {San Diego, California, USA},
 series = {ISCA '07}
 }
 
-@inproceedings{10.1145/1250662.1250707,
+@inproceedings{2007-memory-isca,
 author = {Leverich, Jacob and Arakida, Hideho and Solomatnikov, Alex and Firoozshahian, Amin and Horowitz, Mark and Kozyrakis, Christos},
 title = {Comparing Memory Systems for Chip Multiprocessors},
 year = {2007},
+month = jun,
 isbn = {9781595937063},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2544,10 +2608,11 @@ series = {ISCA '07}
 }
 
 
-@inproceedings{10.1145/1250662.1250673,
+@inproceedings{2007-htm-isca,
 author = {Minh, Chi Cao and Trautmann, Martin and Chung, JaeWoong and McDonald, Austen and Bronson, Nathan and Casper, Jared and Kozyrakis, Christos and Olukotun, Kunle},
 title = {An Effective Hybrid Transactional Memory System with Strong Isolation Guarantees},
 year = {2007},
+month = jun,
 isbn = {9781595937063},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2562,10 +2627,11 @@ series = {ISCA '07}
 }
 
 
-@inproceedings{10.1145/1248377.1248389,
+@inproceedings{2006-pca-spaa,
 author = {Baek, Woongki and Chung, JaeWoong and Minh, Chi Cao and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Towards Soft Optimization Techniques for Parallel Cognitive Applications},
 year = {2007},
+month = jun,
 isbn = {9781595936677},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2579,7 +2645,7 @@ series = {SPAA '07}
 }
 
 
-@article{10.1109/MM.2007.39,
+@article{2007-ramp-micro,
 author = {Wawrzynek, John and Patterson, David and Oskin, Mark and Lu, Shih-Lien and Kozyrakis, Christos and Hoe, James C. and Chiou, Derek and Asanovic, Krste},
 title = {RAMP: Research Accelerator for Multiple Processors},
 year = {2007},
@@ -2592,17 +2658,18 @@ issn = {0272-1732},
 doi = {10.1109/MM.2007.39},
 abstract = {The RAMP project's goal is to enable the intensive, multidisciplinary innovation that the computing industry will need to tackle the problems of parallel processing. RAMP itself is an open-source, community-developed, FPGA-based emulator of parallel architectures. Its design framework lets a large, collaborative community develop and contribute reusable, composable design modules. Three complete designs--for transactional memory, distributed systems, and distributed-shared memory--demonstrate the platform's potential.},
 journal = {IEEE Micro},
-month = {mar},
+month = mar,
 pages = {46–57},
 numpages = {12},
 keywords = {emulation, parallel architectures, hardware-software codesign, distributed-shared memory, modeling of computer architecture, field-programmable gate arrays, distributed systems, transactional memory, integration}
 }
 
 
-@inproceedings{10.5555/1266366.1266493,
+@inproceedings{2007-rpa-date,
 author = {Park, JongSoo and Park, Sung-Boem and Balfour, James D. and Black-Schaffer, David and Kozyrakis, Christos and Dally, William J.},
 title = {Register Pointer Architecture for Efficient Embedded Processors},
 year = {2007},
+month = jan,
 isbn = {9783981080124},
 publisher = {EDA Consortium},
 address = {San Jose, CA, USA},
@@ -2614,10 +2681,11 @@ location = {Nice, France},
 series = {DATE '07}
 }
 
-@inproceedings{10.5555/1266366.1266370,
+@inproceedings{2007-atlas-date,
 author = {Njoroge, Njuguna and Casper, Jared and Wee, Sewook and Teslyar, Yuriy and Ge, Daxia and Kozyrakis, Christos and Olukotun, Kunle},
 title = {ATLAS: A Chip-Multiprocessor with Transactional Memory Support},
 year = {2007},
+month = jan,
 isbn = {9783981080124},
 publisher = {EDA Consortium},
 address = {San Jose, CA, USA},
@@ -2630,10 +2698,11 @@ series = {DATE '07}
 }
 
 
-@inproceedings{10.1145/1229428.1229441,
+@inproceedings{2007-tcc-ppopp,
 author = {Carlstrom, Brian D. and McDonald, Austen and Carbin, Michael and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Transactional Collection Classes},
 year = {2007},
+month = mar,
 isbn = {9781595936028},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2647,7 +2716,7 @@ location = {San Jose, California, USA},
 series = {PPoPP '07}
 }
 
-@article{10.1109/MM.2007.26,
+@article{2007-tm-hotpicks,
 author = {McDonald, Austen and Carlstrom, Brian D. and Chung, JaeWoong and Minh, Chi Cao and Chafi, Hassan and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Transactional Memory: The Hardware-Software Interface},
 year = {2007},
@@ -2667,10 +2736,11 @@ keywords = {parallel architectures, hardware/software interfaces, transactional 
 }
 
 
-@inproceedings{10.1145/1216919.1216936,
+@inproceedings{2007-atlas-fpgs
 author = {Wee, Sewook and Casper, Jared and Njoroge, Njuguna and Tesylar, Yuriy and Ge, Daxia and Kozyrakis, Christos and Olukotun, Kunle},
 title = {A Practical FPGA-Based Framework for Novel CMP Research},
 year = {2007},
+month = feb,
 isbn = {9781595936004},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2685,10 +2755,11 @@ series = {FPGA '07}
 }
 
 
-@inproceedings{10.1109/HPCA.2007.346189,
+@inproceedings{2007-tcc-hpca,
 author = {Chafi, Hassan and Casper, Jared and Carlstrom, Brian D. and McDonald, Austen and Minh, Chi Cao and Baek, Woongki and Kozyrakis, Christos and Olukotun, Kunle},
 title = {A Scalable, Non-Blocking Approach to Transactional Memory},
 year = {2007},
+month = feb,
 isbn = {1424408040},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -2700,10 +2771,11 @@ numpages = {12},
 series = {HPCA '07}
 }
 
-@inproceedings{10.1109/HPCA.2007.346181,
+@inproceedings{2007-mr-hpca,
 author = {Ranger, Colby and Raghuraman, Ramanan and Penmetsa, Arun and Bradski, Gary and Kozyrakis, Christos},
 title = {Evaluating MapReduce for Multi-Core and Multiprocessor Systems},
 year = {2007},
+month = feb,
 isbn = {1424408040},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -2716,7 +2788,7 @@ series = {HPCA '07}
 }
 
 
-@article{10.1145/1189276.1189288,
+@article{2007-tm-queue,
 author = {Adl-Tabatabai, Ali-Reza and Kozyrakis, Christos and Saha, Bratin},
 title = {Unlocking Concurrency: Multicore Programming with Transactional Memory},
 year = {2006},
@@ -2735,7 +2807,7 @@ numpages = {10}
 }
 
 
-@article{10.1145/1241601.1241608,
+@article{2007-qos-cal,
 author = {Guo, Fei and Kannan, Hari and Zhao, Li and Illikkal, Ramesh and Iyer, Ravi and Newell, Don and Solihin, Yan and Kozyrakis, Christos},
 title = {From Chaos to QoS: Case Studies in CMP Resource Management},
 year = {2007},
@@ -2747,14 +2819,14 @@ number = {1},
 issn = {0163-5964},
 doi = {10.1145/1241601.1241608},
 abstract = {As more and more cores are enabled on the die of future CMP platforms, we expect that several diverse workloads will run simultaneously on the platform. A key example of this trend is the growth of virtualization usage models. When multiple virtual machines or applications or threads run simultaneously, the quality of service (QoS) that the platform provides to each individual thread is non-deterministic today. This occurs because the simultaneously running threads place very different demands on the shared resources (cache space, memory bandwidth, etc) in the platform and in most cases contend with each other. In this paper, we first present case studies that show how this results in non-deterministic performance. Unlike the compute resources managed through scheduling, platform resource allocation to individual threads cannot be controlled today. In order to provide better determinism and QoS, we then examine resource management mechanisms and present QoS-aware architectures and execution environments. The main contribution of this paper is the architecture feasibility analysis through prototypes that allow experimentation with QoS-Aware execution environments and architectural resources. We describe these QoS prototypes and then present preliminary case studies of multi-tasking and virtualization usage models sharing one critical CMP resource (last-level cache). We then demonstrate how proper management of the cache resource can provide service differentiation and deterministic performance behavior when running disparate workloads in future CMP platforms.},
-journal = {SIGARCH Comput. Archit. News},
+journal = {SIGARCH Computer Architure News},
 month = Mar,
 pages = {21–30},
 numpages = {10}
 }
 
 
-@Misc{2006_dascmp,
+@Misc{2006-qos-dascmp,
   author = 	 {Hari Kannan, Fei Guo, Li Zhao, Ramesh Illikkal, Ravi Iyer, Don Newell, Yan Solihin, Christos Kozyrakis
 },
   title = 	 {From Chaos to QoS: Case Studies in CMP Resource Management},
@@ -2764,7 +2836,7 @@ numpages = {10}
 }
 
 
-@article{10.1016/j.scico.2006.05.006,
+@article{2006-jtm-scp,
 author = {Carlstrom, Brian D. and Chung, JaeWoong and Chafi, Hassan and McDonald, Austen and Minh, Chi Cao and Hammond, Lance and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Executing Java Programs with Transactional Memory},
 year = {2006},
@@ -2777,17 +2849,18 @@ issn = {0167-6423},
 doi = {10.1016/j.scico.2006.05.006},
 abstract = {Parallel programming is difficult due to the complexity of dealing with conventional lock-based synchronization. To simplify parallel programming, there have been a number of proposals to support transactions directly in hardware and eliminate locks completely. Although hardware support for transactions has the potential to completely change the way parallel programs are written, initially transactions will be used to execute existing parallel programs. In this paper we investigate the implications of using transactions to execute existing parallel Java programs. Our results show that transactions can be used to support all aspects of Java multithreaded programs, and once Java virtual machine issues have been addressed, the conversion of a lock-based application into transactions is largely straightforward. The performance that these converted applications achieve is equal to or sometimes better than the original lock-based implementation.},
 journal = {Science of Computer Programming},
-month = {dec},
+month = dec,
 pages = {111–129},
 numpages = {19},
 keywords = {transactions, multiprocessor architecture, feedback optimization}
 }
 
 
-@inproceedings{10.1145/1168857.1168903,
+@inproceedings{2006-virttm-asplos,
 author = {Chung, JaeWoong and Minh, Chi Cao and McDonald, Austen and Skare, Travis and Chafi, Hassan and Carlstrom, Brian D. and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Tradeoffs in Transactional Memory Virtualization},
 year = {2006},
+month = oct,
 isbn = {1595934510},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2802,10 +2875,11 @@ series = {ASPLOS XII}
 }
 
 
-@inproceedings{10.1145/1152154.1152177,
+@inproceedings{2006-testtm-pact,
 author = {Manovit, Chaiyasit and Hangal, Sudheendra and Chafi, Hassan and McDonald, Austen and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Testing Implementations of Transactional Memory},
 year = {2006},
+month = sep,
 isbn = {159593264X},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2819,7 +2893,7 @@ location = {Seattle, Washington, USA},
 series = {PACT '06}
 }
 
-@article{10.1145/1162690.1162694,
+@article{2006-bliss-taco,
 author = {Zmily, Ahmad and Kozyrakis, Christos},
 title = {Block-Aware Instruction Set Architecture},
 year = {2006},
@@ -2832,7 +2906,7 @@ issn = {1544-3566},
 doi = {10.1145/1162690.1162694},
 abstract = {Instruction delivery is a critical component for wide-issue, high-frequency processors since its bandwidth and accuracy place an upper limit on performance. The processor front-end accuracy and bandwidth are limited by instruction-cache misses, multicycle instruction-cache accesses, and target or direction mispredictions for control-flow operations. This paper presents a block-aware instruction set (BLISS) that allows software to assist with front-end challenges. BLISS defines basic block descriptors that are stored separately from the actual instructions in a program. We show that BLISS allows for a decoupled front-end that tolerates instruction-cache latency, facilitates instruction prefetching, and leads to higher prediction accuracy.},
 journal = {ACM Transactions on Architure and Code Optimization (TACO)},
-month = {sep},
+month = sep,
 pages = {327–357},
 numpages = {31},
 keywords = {basic block, instruction fetch, Instruction set architecture, decoupled architecture, software hints, branch prediction}
@@ -2841,7 +2915,7 @@ keywords = {basic block, instruction fetch, Instruction set architecture, decoup
 
 
 
-@Misc{2006_hpec,
+@Misc{2006_cearch-hpec,
   author = 	 {S. Crago, J. McMahon,C. Archer, K.Asanovic, R. Chaung, K. Goolsbey, M. Hall, C. Kozyrakis, K. Olukotun U. O’Reilly, R. Pancoast, V. Prasanna, R. Rabbah, S. Ward, D.},
   title = 	 {CEARCH: Cognition Enabled Architecture},
   howpublished = {Proceedings of the 10th Workshop on High Performance Embedded Computing (HPEC)},
@@ -2850,14 +2924,14 @@ keywords = {basic block, instruction fetch, Instruction set architecture, decoup
 }
 
 
-@InProceedings{2006_hotchips_ramp,
+@InProceedings{2006-ramp-hotchips,
   author = 	 {Krste Asanovic, Derek Chiou, James Hoe, Christos Kozyrakis, Shih-Lien Lu, Mark Oskin, Jab Rabaey, John Wawrzynek},
   title = 	 {RAMP: Research Accelerator for Multiple Processors},
   booktitle = {Technical Record of the 18th Hot Chips Symposium},
   year = 	 2006,
   month = 	 Aug}
 
-@INPROCEEDINGS{1690605,
+@INPROCEEDINGS{2006-vlt-icpp,
 author={Rivoire, Suzanne and Schultz, Rebecca and Okuda, Tomofumi and Kozyrakis, Christos},
 booktitle={Proceedings of the International Conference on Parallel Processing (ICPP)},
 title={Vector Lane Threading},
@@ -2870,10 +2944,11 @@ ISSN={2332-5690},
 month=aug,}
 
 
-@inproceedings{10.1109/ISCA.2006.9,
+@inproceedings{2006-tm-isca,
 author = {McDonald, Austen and Chung, JaeWoong and Carlstrom, Brian D. and Minh, Chi Cao and Chafi, Hassan and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Architectural Semantics for Practical Transactional Memory},
 year = {2006},
+month = jun,
 isbn = {076952608X},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -2885,7 +2960,7 @@ numpages = {13},
 series = {ISCA '06}
 }
 
-@Misc{2006_wddd,
+@Misc{2006-sec-wddd,
   author = 	 {Michael Dalton, Hari Kannan, Christos Kozyrakis},
   title = 	 {Deconstructing Hardware Architectures for Security},
   howpublished = {The 5th Workshop on Duplicating, Deconstructing, and Debunking (WDDD) at ISCA},
@@ -2893,7 +2968,7 @@ series = {ISCA '06}
   year = 	 2006
 }
 
-@Misc{2006_mobs,
+@Misc{2006-power-mobs,
   author = 	 {Dimitris Economou, Suzanne Rivoire, Christos Kozyrakis, Partha Ranganathan
 },
   title = 	 {Full-system Power Analysis and Modeling for Server Environments},
@@ -2903,10 +2978,11 @@ series = {ISCA '06}
 }
 
 
-@inproceedings{10.1145/1133981.1133983,
+@inproceedings{2006-atomos-pldi,
 author = {Carlstrom, Brian D. and McDonald, Austen and Chafi, Hassan and Chung, JaeWoong and Minh, Chi Cao and Kozyrakis, Christos and Olukotun, Kunle},
 title = {The Atomos Transactional Programming Language},
 year = {2006},
+month = jun,
 isbn = {1595933204},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -2920,7 +2996,7 @@ location = {Ottawa, Ontario, Canada},
 series = {PLDI '06}
 }
 
-@Misc{2006_wtw1,
+@Misc{2006-early-wtw,
   author = 	 {Travis Skare and Christos Kozyrakis},
   title = 	 {Early Release: Friend or Foe},
   howpublished = {The Workshop on Transactional Memory Workloads (WTW) at PLDI},
@@ -2928,7 +3004,7 @@ series = {PLDI '06}
   year = 	 2006
 }
 
-@Misc{2006_wtw2,
+@Misc{2006-specjbb_wtw,
   author = 	 {JaeWoong Chung, Chi Cao Minh, Brian D. Carlstrom, Christos Kozyrakis},
   title = 	 { Parallelizing SPECjbb2000 with Transactional Memory},
   howpublished = {The Workshop on Transactional Memory Workloads (WTW) at PLDI},
@@ -2937,7 +3013,7 @@ series = {PLDI '06}
 }
 
 
-@Misc{2006_stmcs,
+@Misc{2006-tm-stmcs,
   author = 	 {Brian D. Calrstrom, JaeWoong Chung, Christos Kozyrakis, Kunle Olukotun},
   title = 	 {The Software Stack for Transactional Memory: Challenges and Opportunities},
   howpublished = {The 1st Workshop on Software Tools for Multicore Systems (STMCS)},
@@ -2946,10 +3022,11 @@ series = {PLDI '06}
 }
 
 
-@inproceedings{10.5555/1131481.1131544,
+@inproceedings{2006-bliss-date,
 author = {Zmily, Ahmad and Kozyrakis, Christos},
 title = {Simultaneously Improving Code Size, Performance, and Energy in Embedded Processors},
 year = {2006},
+month = mar,
 isbn = {3981080106},
 publisher = {European Design and Automation Association},
 address = {Leuven, BEL},
@@ -2963,14 +3040,14 @@ series = {DATE '06}
 
 
 
-@Unpublished{2006_libprefetch2,
+@Unpublished{2006_libprefetch,
   author = 	 {Varun Malhotra and Christos Kozyrakis},
   title = 	 {Library-based Prefetching for Pointer Intensive Applications},
   note = 	 {Online Technical Manuscript},
   month = 	 Feb,
   year = 	 2006}
 
-@INPROCEEDINGS{1598135,
+@INPROCEEDINGS{2006-tm-hpca,
 author={Chung, J.W. and Chafi, H. and Minh, C.C. and McDonald, A. and Carlstrom, B. and Kozyrakis, C. and Olukotun, K.},
 booktitle={Proceedings of the 12th International Symposium on High-Performance Computer Architecture (HPCA)},
 title={The common case transactional behavior of multithreaded programs},
@@ -2982,20 +3059,21 @@ abstract={Transactional memory (TM) provides an easy-to-use and high-performance
 keywords={Computer aided software engineering;Frequency synchronization;Application software;Concurrent computing;Parallel programming;Hardware;Proposals;Programming profession;System recovery;Robustness},
 doi={10.1109/HPCA.2006.1598135},
 ISSN={2378-203X},
-month={Feb},}
+month=Feb}
 
-@Misc{2006_atlas_warfp,
+@Misc{2006-atlas-warfp,
   author = 	 {Njuguna Njoroge, Sewook Wee, Jared Casper, Justin Burdick, Yuriy Teslyar, Christos Kozyrakis, Kunle Olukotun},
   title = 	 {Building and Using the ATLAS Transactional Memory System},
   howpublished = {The 2nd Workshop on Architecture Research using FPGA Platforms (WARFP) at HPCA-12},
   month = 	 Feb,
   year = 	 2006}
 
-@INPROCEEDINGS{1577776,
+@INPROCEEDINGS{2005-power-globecom,
 author={Mastroleon, L. and Bambos, N. and Kozyrakis, C. and Economou, D.},
 booktitle={Proceedings of the IEEE Global Telecommunications Conference (GLOBECOM)},
 title={Automatic power management schemes for Internet servers and data centers},
 year={2005},
+month = nov, 
 volume={2},
 number={},
 pages={5 pp.-},
@@ -3003,21 +3081,22 @@ abstract={We investigate autonomic power control policies for Internet servers a
 keywords={Energy management;Internet;Web server;Dynamic programming;Performance gain;Power system management;Power control;Monitoring;Thermal loading;Delay},
 doi={10.1109/GLOCOM.2005.1577776},
 ISSN={1930-529X},
-month={Nov},}
+month=Nov}
 
 
 
-@Misc{2005_jtm_scool,
+@Misc{2005-jtm-scool,
   author = 	 {Brian D. Carlstrom, JaeWoong Chung, Hassan Chafi, Austen McDonald, Chi Cao MinhLance Hammond, Christos Kozyrakis, Kunle Olukotun},
   title = {Transactional Execution of Java Programs},
   howpublished = {Workshop on Synchronization and Concurrency in Object-Oriented Languages (SCOOL) at OOPSLA},
   month = 	 Oct,
   year = 	 2005}
 
-@inproceedings{10.1109/PACT.2005.11,
+@inproceedings{2005-tcc-pact,
 author = {McDonald, Austen and Chung, JaeWoong and Chafi, Hassan and Minh, Chi Cao and Carlstrom, Brian D. and Hammond, Lance and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Characterization of TCC on Chip-Multiprocessors},
 year = {2005},
+month = Sep,
 isbn = {076952429X},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -3030,10 +3109,11 @@ series = {PACT '05}
 }
 
 
-@inproceedings{10.1007/11549468_60,
+@inproceedings{2005-bliss-europar,
 author = {Zmily, Ahmad and Killian, Earl and Kozyrakis, Christos},
 title = {Improving Instruction Delivery with a Block-Aware ISA},
 year = {2005},
+month = Aug,
 isbn = {3540287000},
 publisher = {Springer-Verlag},
 address = {Berlin, Heidelberg},
@@ -3047,7 +3127,7 @@ series = {Euro-Par'05}
 }
 
 
-@TechReport{ramp_tr05,
+@TechReport{2005-ramp-tr,
   author = 	 {Arvind, Krste Asanović, Derek Chiou, James C. Hoe, Christos Kozyrakis, Shih-Lien Lu, Mark Oskin, David Patterson, Jan Rabaey, John Wawrzynek},
   title = 	 {RAMP: Research Accelerator for Multiple Processors - A Community Vision for a Shared Experimental Parallel HW/SW Platform },
   institution =  {UC Berkeley},
@@ -3055,10 +3135,11 @@ series = {Euro-Par'05}
   number = 	 {UCB/CSD-05-1412},
   month = 	Sep}
 
-@inproceedings{10.1145/1077603.1077614,
+@inproceedings{2005-bliss-ispled,
 author = {Zmily, Ahmad and Kozyrakis, Christos},
 title = {Energy-Efficient and High-Performance Instruction Fetch Using a Block-Aware ISA},
 year = {2005},
+month = Aug,
 isbn = {1595931376},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -3075,10 +3156,11 @@ series = {ISLPED '05}
 
 
 
-@inproceedings{10.1145/1088149.1088176,
+@inproceedings{2005-tape-ics,
 author = {Chafi, Hassan and Minh, Chi Cao and McDonald, Austen and Carlstrom, Brian D. and Chung, JaeWoong and Hammond, Lance and Kozyrakis, Christos and Olukotun, Kunle},
 title = {TAPE: A Transactional Application Profiling Environment},
 year = {2005},
+month = jun,
 isbn = {1595931678},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -3091,10 +3173,11 @@ location = {Cambridge, Massachusetts},
 series = {ICS '05}
 }
 
-@inproceedings{10.1109/ICPP.2005.44,
+@inproceedings{2005-spec-icpp,
 author = {Whaley, John and Kozyrakis, Christos},
 title = {Heuristics for Profile-Driven Method-Level Speculative Parallelization},
 year = {2005},
+month = jun,
 isbn = {0769523803},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -3107,7 +3190,7 @@ series = {ICPP '05}
 }
 
 
-@Misc{atlas_warfp05,
+@Misc{2005-atlas-warfp,
   author = 	 {Christos Kozyrakis, Kunle Olukotun
 },
   title = 	 {ATLAS: A Scalable Emulator for Transactional Parallel Systems },
@@ -3115,7 +3198,7 @@ series = {ICPP '05}
   month = 	 Feb,
   year = 	 2005}
 
-@Misc{svm_lar04,
+@Misc{2004-svn-lar,
   author = 	 {Peter. Mattson, Richard Lethin, V. Litvinov, Francois Labonte, Ian Buck, Christos Kozyrakis, Mark Horowitz},
   title = 	 {Stream Virtual Machine and Two-Level Compilation Model for Streaming Architectures and Languages},
   howpublished = {Proceedings of the 3rd Intl. Workshop on Languages and Runtimes (LaR) at OOPSLA},
@@ -3134,7 +3217,7 @@ an architecture-specific low-level compiler using an architecture
 model and Streaming Virtual Machine [7] code. We describe this
 interface and highlight the challenges of this approach. }}
 
-@article{10.1109/MM.2004.91,
+@article{2004-tcc-toppicks,
 author = {Hammond, Lance and Carlstrom, Brian D. and Wong, Vicky and Chen, Michael and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Transactional Coherence and Consistency: Simplifying Parallel Hardware and Software},
 year = {2004},
@@ -3147,16 +3230,17 @@ issn = {0272-1732},
 doi = {10.1109/MM.2004.91},
 abstract = {TCC simplifies parallel hardware and software design by eliminating the need for conventional cache coherence and consistency models and letting programmers parallelize a wide range of applications with a simple, lock-free transactional model.},
 journal = {IEEE Micro},
-month = {nov},
+month = nov,
 pages = {92–103},
 numpages = {12}
 }
 
 
-@inproceedings{10.1145/1024393.1024395,
+@inproceedings{2004-tcc-asplos,
 author = {Hammond, Lance and Carlstrom, Brian D. and Wong, Vicky and Hertzberg, Ben and Chen, Mike and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Programming with Transactional Coherence and Consistency (TCC)},
 year = {2004},
+month = oct,
 isbn = {1581138040},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
@@ -3170,10 +3254,11 @@ location = {Boston, MA, USA},
 series = {ASPLOS XI}
 }
 
-@inproceedings{10.5555/1025127.1026015,
+@inproceedings{2004-svm-pact,
 author = {Labonte, Francois and Mattson, Peter and Thies, William and Buck, Ian and Kozyrakis, Christos and Horowitz, Mark},
 title = {The Stream Virtual Machine},
 year = {2004},
+month = sep,
 isbn = {0769522297},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -3185,10 +3270,11 @@ series = {PACT '04}
 }
 
 
-@inproceedings{10.5555/998680.1006711,
+@inproceedings{2004-tcc-isca,
 author = {Hammond, Lance and Wong, Vicky and Chen, Mike and Carlstrom, Brian D. and Davis, John D. and Hertzberg, Ben and Prabhu, Manohar K. and Wijaya, Honggo and Kozyrakis, Christos and Olukotun, Kunle},
 title = {Transactional Memory Coherence and Consistency},
 year = {2004},
+month = jun,
 isbn = {0769521436},
 publisher = {IEEE Computer Society},
 address = {USA},
@@ -3199,8 +3285,8 @@ location = {M\"{u}nchen, Germany},
 series = {ISCA '04}
 }
 
-@ARTICLE{1261385,
-author={Kozyrakis, C. and Patterson, D.A.},
+@ARTICLE{2003-code-toppicks,
+author={Kozyrakis, Christos and Patterson, David},
 journal={IEEE Micro},
 title={Scalable vector processors for embedded systems},
 year={2003},
@@ -3211,11 +3297,11 @@ abstract={For embedded applications with data-level parallelism, a vector proces
 keywords={Vector processors;Embedded system;Registers;VLIW;Computer architecture;Energy consumption;Embedded computing;Parallel processing;Process design;High performance computing},
 doi={10.1109/MM.2003.1261385},
 ISSN={1937-4143},
-month={Nov},}
+month=Nov}
 
 
-@INPROCEEDINGS{1207017,
-author={Kozyrakis, C. and Patterson, D.},
+@INPROCEEDINGS{2003-code-iram,
+author={Kozyrakis, Christos and Patterson, David},
 booktitle={Proceedings of the 30th International Symposium on Computer Architecture (ISCA)},
 title={Overcoming the limitations of conventional vector processors},
 year={2003},
@@ -3226,10 +3312,10 @@ abstract={Despite their superior performance for multimedia applications, vector
 keywords={Vector processors;Registers;Delay;System-on-a-chip;Microarchitecture;Performance loss;Computer architecture;Bandwidth;CMOS technology;Computer science},
 doi={10.1109/ISCA.2003.1207017},
 ISSN={1063-6897},
-month={June},}
+month=Jun}
 
-@INPROCEEDINGS{1176257,
-author={Kozyrakis, C. and Patterson, D.},
+@INPROCEEDINGS{2002-vector-micro,
+author={Kozyrakis, Christos and Patterson, David},
 booktitle={Proceedings of the 35th IEEE/ACM International Symposium on Microarchitecture (MICRO)},
 title={Vector vs. superscalar and VLIW architectures for embedded multimedia benchmarks},
 year={2002},
@@ -3240,9 +3326,9 @@ abstract={Multimedia processing on embedded devices requires an architecture tha
 keywords={VLIW;Energy consumption;Prototypes;Vector processors;Reduced instruction set computing;Clocks;Frequency;Manuals;Design optimization;Digital signal processing chips},
 doi={10.1109/MICRO.2002.1176257},
 ISSN={1072-4451},
-month={Nov},}
+month=Nov}
 
-@phdthesis{phd_kozyrakis,
+@phdthesis{2002-phdthesis-kozyrakis,
   author  = "Christos Kozyrakis",
   title   = "Scalable Vector Media Processors for Embedded Systems ",
   school  = "University of California at Berkeley",
@@ -3273,7 +3359,7 @@ issue techniques that exacerbate energy consumption and design complexity},
 }
 
 
-@ARTICLE{964446,
+@ARTICLE{2001-codesign-ieee,
 author={Kozyrakis, C. and Judd, D. and Gebis, J. and Williams, S. and Patterson, D. and Yelick, K.},
 journal={Proceedings of the IEEE},
 title={Hardware/compiler codevelopment for an embedded media processor},
@@ -3285,18 +3371,18 @@ abstract={Embedded and portable systems running multimedia applications create a
 keywords={Hardware;Multimedia systems;Microprocessors;Digital signal processors;Energy consumption;Power system modeling;Vector processors;Random access memory;Bandwidth;Prototypes},
 doi={10.1109/5.964446},
 ISSN={1558-2256},
-month={Nov},}
+month=Nov}
 
 
 
-@InProceedings{iram_hotchips00,
+@InProceedings{2000-iram-hotchips,
   author = 	 {Christos Kozyrakis, Joseph Gebis, David Martin, Samuel Williams, Iakovos Mavroidis, Steven Pope, Darren Jones, David Patterson, Katherine Yelick},
   title = 	 {Vector IRAM: A Media-oriented Vector Processor with Embedded DRAM },
   booktitle = {Technical Record of the 12th Hot Chips Conference},
   year = 	2000,
   month = 	 Aug}
 
-@Misc{iramcomp_ims,
+@Misc{2000-compiler-ims,
   author = 	 {David Judd, Katherine Yelick, Christos Kozyrakis, David Martin, David Patterson},
   title = 	 { Exploiting On-chip Memory Bandwidth in the VIRAM Compiler},
   howpublished = {Proceedings of the 2nd Workshop on Intelligent Memory Systems (IMS)},
@@ -3313,7 +3399,7 @@ with non-contiguous or unpredictable memory access patterns. The second problem 
 media processing, including processing of 8 and 16-bit data.},
   year = 	 2000}
 
-@Book{ims2001_proceedings,
+@Book{2001-proceedings-ims,
   editor = 	 {Frederik Chong, Christos Kozyrakis, Mark Oskin},
   title = 	 {Proceedings of the 2nd Workshop on Intelligent Memory Systems},
   publisher = 	 {Springer Verlag},
@@ -3324,7 +3410,7 @@ media processing, including processing of 8 and 16-bit data.},
   isbn = {3-540-42328-1}
 }
 
-@INPROCEEDINGS{840306,
+@INPROCEEDINGS{2000-bottleneck-date,
 author={Catthoor, F. and Dutt, N.D. and Kozyrakis, C.E.},
 booktitle={Proceedings of the Design, Automation and Test in Europe Conference (DATE)},
 title={How to solve the current memory access and data transfer bottlenecks: at the processor architecture or at the compiler level?},
@@ -3336,13 +3422,9 @@ abstract={Current processor architectures, both in the programmable and custom c
 keywords={Hardware;Parallel processing;Multithreading;Microprocessors;Runtime;Throughput;Arithmetic;Electronic switching systems;Microarchitecture;Memory management},
 doi={10.1109/DATE.2000.840306},
 ISSN={},
-month={March},}
+month=Mar}
 
-
-
-
-
-@mastersthesis{kozyrakis_ms99,
+@mastersthesis{1999-msthesis-tr,
   author = 	 {Kozyrakis, Christos},
   title = 	 {A Media-Enhanced Vector Architecture for Embedded Memory Systems},
   school =  {University of California at Berkeley},
@@ -3364,7 +3446,7 @@ the modular design can be scaled without complicating control logic. We demonstr
 scaling the architecture leads to near linear application speedup. We also evaluate the effect of scaling the capacity and parallelism of the on-chip memory system to die area and
 sustained performance.}}
 
-@ARTICLE{730733,
+@ARTICLE{1998-direction-computer,
 author={Kozyrakis, C. and Patterson, D.A.},
 journal={IEEE Computer},
 title={A new direction for computer architecture research},
@@ -3376,9 +3458,9 @@ abstract={In the past few years, two important trends have evolved that could ch
 keywords={Computer architecture;Portable computers;Application software;Personal digital assistants;Process design;Shape;Computer applications;Multimedia computing;Cellular phones;Digital cameras},
 doi={10.1109/2.730733},
 ISSN={1558-0814},
-month={Nov},}
+month=Nov}
 
-@INPROCEEDINGS{628842,
+@INPROCEEDINGS{1997-iram-iccd,
 author={Patterson, D. and Asanovic, K. and Brown, A. and Fromm, R. and Golbus, J. and Gribstad, B. and Keeton, K. and Kozyrakis, C. and Martin, D. and Perissakis, S. and Thomas, R. and Treuhaft, N. and Yelick, K.},
 booktitle={Proceedings of the International Conference on Computer Design (ICCD)},
 title={Intelligent RAM (IRAM): the industrial setting, applications, and architectures},
@@ -3394,7 +3476,7 @@ month=Oct,
 keywords = {Intelligent memory, memory wall, DRAM, processor, processor in memory, energy efficiency}
 }
 
-@ARTICLE{612252,
+@ARTICLE{1997-iram-computer,
 author={Kozyrakis, C. and Perissakis, S. and Patterson, D. and Anderson, T. and Asanovic, K. and Cardwell, N. and Fromm, R. and Golbus, J. and Gribstad, B. and Keeton, K. and Thomas, R. and Treuhaft, N. and Yelick, K.},
 journal={IEEE Computer},
 title={Scalable processors in the billion-transistor era: IRAM},
@@ -3406,9 +3488,9 @@ abstract={Members of the University of California, Berkeley, argue that the memo
 keywords={Random access memory;Delay;Bandwidth;Read-write memory;Out of order;VLIW;Computer architecture;Fabrication;Bridges;Microprocessor chips},
 doi={10.1109/2.612252},
 ISSN={1558-0814},
-month={Sep.},}
+month=Sep}
 
-@INPROCEEDINGS{634851,
+@INPROCEEDINGS{1997-atlas-arvlsi,
 author={Kornaros, G. and Kozyrakis, C. and Vatsolaki, P. and Katevenis, M.},
 booktitle={Proceedings of the 17th Conference on Advanced Research in VLSI (ARVLSI)},
 title={Pipelined multi-queue management in a VLSI ATM switch chip with credit-based flow-control},
@@ -3420,10 +3502,10 @@ abstract={We describe the queue management block of ATLAS I, a single-chip ATM s
 keywords={Switches;Very large scale integration;Asynchronous transfer mode;Pipelines;Clocks;Logic;Aggregates;Throughput;Delay;Monitoring},
 doi={10.1109/ARVLSI.1997.634851},
 ISSN={},
-month={Sep.}}
+month=Sep}
 
 
-@INPROCEEDINGS{604742,
+@INPROCEEDINGS{1997-energy-isca,
 author={Fromm, R. and Perissakis, S. and Cardwell, N. and Kozyrakis, C. and McGaughy, B. and Patterson, D. and Anderson, T. and Yelick, K.},
 booktitle={Proceedings of the 24th International Symposium on Computer Architecture (ISCA)},
 title={The Energy Efficiency Of Iram Architectures},
@@ -3435,13 +3517,13 @@ abstract={},
 keywords={Energy efficiency;Random access memory;Portable computers;Personal digital assistants;Computer architecture;Energy consumption;Permission;Power system modeling;Power system simulation;Central Processing Unit},
 doi={10.1145/264107.264214},
 ISSN={1063-6897},
-month={June},
+month=Jun,
 keywords = {energy efficiency, memory wall, processor, DRAM, intelligent memory}
 }
 
 
 
-@Misc{Bowman97_existing,
+@Misc{1997-existing-wmld,
   author = 	 {Ngeci Bowman, Neal Cardwell, Christos Kozyrakis, Cynthia Romer, Helen Wang
 },
   title = 	 {Evaluation of Existing Architectures in IRAM Systems},
@@ -3451,7 +3533,7 @@ keywords = {energy efficiency, memory wall, processor, DRAM, intelligent memory}
   keywords = 	 {processor - DRAM integration, DRAM, intelligent memory}
 }
 
-@ARTICLE{592312,
+@ARTICLE{1997-iram-micro,
 author={Patterson, D. and Anderson, T. and Cardwell, N. and Fromm, R. and Keeton, K. and Kozyrakis, C. and Thomas, R. and Yelick, K.},
 journal={IEEE Micro},
 title={A case for intelligent RAM},
@@ -3463,10 +3545,10 @@ abstract={Two trends call into question the current practice of fabricating micr
 keywords={Computer aided software engineering;Random access memory;Delay;Clocks;Bandwidth;Databases;Read-write memory;Sparse matrices;Pins;Out of order},
 doi={10.1109/40.592312},
 ISSN={1937-4143},
-month={March}}
+month=Mar}
 
 
-@INPROCEEDINGS{585348,
+@INPROCEEDINGS{1997-iram-isscc,
 author={Patterson, D. and Anderson, T. and Cardwell, N. and Fromm, R. and Keeton, K. and Kozyrakis, C. and Thomas, R. and Yelick, K.},
 booktitle={The Digest of Technical Papers of the IEEE International Solids-State Circuits Conference (ISSCC)},
 title={Intelligent RAM (IRAM): chips that remember and compute},
@@ -3478,10 +3560,10 @@ abstract={It is time to reconsider unifying logic and memory. Since most of the 
 keywords={Random access memory;Microprocessors;Delay;Bandwidth;Switches;Logic;Vector processors;Read-write memory;Computer science;Electronics industry},
 doi={10.1109/ISSCC.1997.585348},
 ISSN={0193-6530},
-month={Feb},}
+month=Feb}
 
 
-@TechReport{kozyrakis96_qmgmt,
+@TechReport{1996-qmanage-tr,
   author = 	 {Christos Kozyrakis},
   title = 	 {The Architecture, Operation, and Design of the Queue Management Block in the ATLAS I ATM Switch},
   institution =  {Institute of Computer Science (ICS), Foundation for Research and Technology (FORTH)},
