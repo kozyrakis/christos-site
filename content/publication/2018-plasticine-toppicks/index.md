@@ -15,10 +15,11 @@ authors:
 - admin
 - Kunle Olukotun
 tags:
-- Phasor measurement units;Random access memory;Computer architecture;Reconfigurable
-  architecture;System-on-chip;Field programmable gate arrays;hardware accelerators;dataflow
-  architectures;FPGA;coarse-grained reconfigurable architectures;parallel patterns;reconfigurable
-  architectures;hardware
+- hardware accelerators
+- dataflow architectures
+- coarse-grained reconfigurable architectures
+- parallel patterns
+- reconfigurable architectures
 categories: []
 date: '2018-05-01'
 lastmod: 2022-05-15T13:35:12-07:00
