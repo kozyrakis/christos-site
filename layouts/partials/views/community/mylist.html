@@ -25,7 +25,7 @@
 {{ $has_attachments := partial "functions/has_attachments" $item }}
   
 <div class="view-list view-list-item">
-  <kbd>{{$item.Params.venue}}</kbd><br>
+  <kbd>{{$item.Params.venue}}</kbd>
   <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a><br>
 
   <div class="article-metadata">
@@ -43,5 +43,5 @@
     {{ partial "page_links" (dict "page" $item "is_list" 1) }}
   </div>
   {{ end }}
-
+  <br>
 </div>
